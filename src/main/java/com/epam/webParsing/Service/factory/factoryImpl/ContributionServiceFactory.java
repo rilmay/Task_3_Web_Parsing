@@ -8,6 +8,7 @@ import com.epam.webParsing.Service.parser.xmlParser.contributionParser.Contribut
 import com.epam.webParsing.Service.parser.xmlParser.parserType.ParserType;
 import com.epam.webParsing.Service.reader.FileReader;
 import com.epam.webParsing.Service.validator.Xml.validatorImpl.XmlValidatorImpl;
+import com.epam.webParsing.Service.validator.Xml.xmlValidatorInterface.XmlValidator;
 import com.epam.webParsing.Service.validator.validatorInterface.Validator;
 
 public class ContributionServiceFactory implements ServiceFactory {
@@ -18,7 +19,7 @@ public class ContributionServiceFactory implements ServiceFactory {
 
     @Override
     public Validator getXmlValidator() {
-        Validator validator = new XmlValidatorImpl();
+        XmlValidator validator = new XmlValidatorImpl();
         validator.setXsd(null);
         return validator;
     }
@@ -33,7 +34,7 @@ public class ContributionServiceFactory implements ServiceFactory {
             case STAX:
                 return new ContributionStaxParser();
             default:
-                return null;
+                throw new IllegalArgumentException();
         }
     }
 }

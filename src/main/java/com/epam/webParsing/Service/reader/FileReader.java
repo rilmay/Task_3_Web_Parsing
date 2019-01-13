@@ -9,7 +9,11 @@ public class FileReader {
         return instance;
     }
 
-    public File read(String path){
-        return null;
+    public File read(String path) {
+        File file = new File(path);
+        if (!file.exists() || !file.isFile()) {
+            throw new IllegalArgumentException();
+        }
+        return file;
     }
 }

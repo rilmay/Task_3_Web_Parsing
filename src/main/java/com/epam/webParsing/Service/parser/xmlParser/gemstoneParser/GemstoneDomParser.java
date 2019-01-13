@@ -1,4 +1,4 @@
-package com.epam.webParsing.Service.parser.xmlParser.GemstoneParser;
+package com.epam.webParsing.Service.parser.xmlParser.gemstoneParser;
 
 import com.epam.webParsing.Service.parser.ParserInterface.XmlParser;
 import com.epam.webParsing.entity.Gemstone;
@@ -6,7 +6,7 @@ import com.epam.webParsing.entity.Gemstone;
 import java.io.File;
 import java.util.List;
 
-public class GemstoneSaxParser implements XmlParser<Gemstone> {
+public class GemstoneDomParser implements XmlParser<Gemstone> {
     @Override
     public List<Gemstone> parse(File parsedFile) {
         return null;

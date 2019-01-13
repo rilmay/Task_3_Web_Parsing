@@ -7,6 +7,8 @@ import com.epam.webParsing.Service.validator.validatorInterface.Validator;
 
 public interface ServiceFactory {
     FileReader getFileReader();
+
     Validator getXmlValidator();
+
     XmlParser getParserByType(ParserType parserType);
 }

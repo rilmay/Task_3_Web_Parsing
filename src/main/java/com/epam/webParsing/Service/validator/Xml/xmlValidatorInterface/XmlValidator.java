@@ -1,4 +1,4 @@
-package com.epam.webParsing.Service.validator.Xml.XmlValidatorInterface;
+package com.epam.webParsing.Service.validator.Xml.xmlValidatorInterface;
 
 import com.epam.webParsing.Service.validator.validatorInterface.Validator;
 

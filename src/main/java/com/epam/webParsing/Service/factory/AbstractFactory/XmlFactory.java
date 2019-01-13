@@ -14,14 +14,14 @@ public class XmlFactory {
         return instance;
     }
 
-    public ServiceFactory returnFactoryByType(EntityType type) {
+    public ServiceFactory getFactoryByType(EntityType type) {
         switch (type) {
             case GEMSTONE:
                 return gemstoneServiceFactory;
             case CONTRIBUTION:
                 return contributionServiceFactory;
             default:
-                return null;
+                throw new IllegalArgumentException();
         }
     }
 }

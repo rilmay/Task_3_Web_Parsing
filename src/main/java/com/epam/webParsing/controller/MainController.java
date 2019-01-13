@@ -14,10 +14,10 @@ import java.util.List;
 public class MainController {
     List<XmlEntity> readFileAndReturnParsed(String path, EntityType entityType) {
         XmlFactory xmlFactory = XmlFactory.getInstance();
-        ServiceFactory serviceFactory = xmlFactory.returnFactoryByType(entityType);
+        ServiceFactory serviceFactory = xmlFactory.getFactoryByType(entityType);
         File parsedFile = serviceFactory.getFileReader().read(path);
         Validator validator = serviceFactory.getXmlValidator();
-        if(!validator.isValid(parsedFile)){
+        if (!validator.isValid(parsedFile)) {
             throw new IllegalArgumentException("Incorrect file");
         }
         XmlParser<XmlEntity> domParser = serviceFactory.getParserByType(ParserType.DOM);

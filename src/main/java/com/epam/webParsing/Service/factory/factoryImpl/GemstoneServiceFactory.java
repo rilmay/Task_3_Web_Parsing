@@ -2,13 +2,13 @@ package com.epam.webParsing.Service.factory.factoryImpl;
 
 import com.epam.webParsing.Service.factory.factoryInterface.ServiceFactory;
 import com.epam.webParsing.Service.parser.ParserInterface.XmlParser;
-import com.epam.webParsing.Service.parser.xmlParser.GemstoneParser.GemstoneDomParser;
-import com.epam.webParsing.Service.parser.xmlParser.GemstoneParser.GemstoneSaxParser;
-import com.epam.webParsing.Service.parser.xmlParser.GemstoneParser.GemstoneStaxParser;
+import com.epam.webParsing.Service.parser.xmlParser.gemstoneParser.GemstoneDomParser;
+import com.epam.webParsing.Service.parser.xmlParser.gemstoneParser.GemstoneSaxParser;
+import com.epam.webParsing.Service.parser.xmlParser.gemstoneParser.GemstoneStaxParser;
 import com.epam.webParsing.Service.parser.xmlParser.parserType.ParserType;
 import com.epam.webParsing.Service.reader.FileReader;
-import com.epam.webParsing.Service.validator.Xml.XmlValidatorInterface.XmlValidator;
 import com.epam.webParsing.Service.validator.Xml.validatorImpl.XmlValidatorImpl;
+import com.epam.webParsing.Service.validator.Xml.xmlValidatorInterface.XmlValidator;
 import com.epam.webParsing.Service.validator.validatorInterface.Validator;
 
 public class GemstoneServiceFactory implements ServiceFactory {
@@ -34,7 +34,7 @@ public class GemstoneServiceFactory implements ServiceFactory {
             case STAX:
                 return new GemstoneStaxParser();
             default:
-                return null;
+                throw new IllegalArgumentException();
         }
     }
 }
