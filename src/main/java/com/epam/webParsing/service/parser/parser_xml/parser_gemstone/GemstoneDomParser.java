@@ -1,6 +1,6 @@
-package com.epam.webParsing.service.parser.xmlParser.gemstoneParser;
+package com.epam.webParsing.service.parser.parser_xml.parser_gemstone;
 
-import com.epam.webParsing.service.parser.parserInterface.XmlParser;
+import com.epam.webParsing.service.parser.parser_interface.XmlParser;
 import com.epam.webParsing.entity.Gemstone;
 
 import java.io.File;

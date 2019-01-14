@@ -1,15 +1,15 @@
-package com.epam.webParsing.service.factory.factoryImpl;
+package com.epam.webParsing.service.factory.factory_impl;
 
-import com.epam.webParsing.service.factory.factoryInterface.ServiceFactory;
-import com.epam.webParsing.service.parser.parserInterface.XmlParser;
-import com.epam.webParsing.service.parser.xmlParser.contributionParser.ContributionDomParser;
-import com.epam.webParsing.service.parser.xmlParser.contributionParser.ContributionSaxParser;
-import com.epam.webParsing.service.parser.xmlParser.contributionParser.ContributionStaxParser;
-import com.epam.webParsing.service.parser.xmlParser.parserType.ParserType;
+import com.epam.webParsing.service.factory.factory_interface.ServiceFactory;
+import com.epam.webParsing.service.parser.parser_interface.XmlParser;
+import com.epam.webParsing.service.parser.parser_xml.parser_contribution.ContributionDomParser;
+import com.epam.webParsing.service.parser.parser_xml.parser_contribution.ContributionSaxParser;
+import com.epam.webParsing.service.parser.parser_xml.parser_contribution.ContributionStaxParser;
+import com.epam.webParsing.service.parser.parser_xml.type.ParserType;
 import com.epam.webParsing.service.reader.FileReader;
-import com.epam.webParsing.service.validator.xml.validatorImpl.XmlValidatorImpl;
-import com.epam.webParsing.service.validator.xml.xmlValidatorInterface.XmlValidator;
-import com.epam.webParsing.service.validator.validatorInterface.Validator;
+import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
+import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
+import com.epam.webParsing.service.validator.validator_interface.Validator;
 
 public class ContributionServiceFactory implements ServiceFactory {
     @Override

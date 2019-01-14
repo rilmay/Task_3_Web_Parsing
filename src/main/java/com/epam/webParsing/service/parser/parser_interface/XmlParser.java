@@ -1,6 +1,6 @@
-package com.epam.webParsing.service.parser.parserInterface;
+package com.epam.webParsing.service.parser.parser_interface;
 
-import com.epam.webParsing.entity.xmlEntityInterface.XmlEntity;
+import com.epam.webParsing.entity.entity_interface.XmlEntity;
 
 import java.io.File;
 import java.util.List;

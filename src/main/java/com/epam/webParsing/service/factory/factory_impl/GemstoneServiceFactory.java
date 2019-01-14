@@ -1,15 +1,15 @@
-package com.epam.webParsing.service.factory.factoryImpl;
+package com.epam.webParsing.service.factory.factory_impl;
 
-import com.epam.webParsing.service.factory.factoryInterface.ServiceFactory;
-import com.epam.webParsing.service.parser.parserInterface.XmlParser;
-import com.epam.webParsing.service.parser.xmlParser.gemstoneParser.GemstoneDomParser;
-import com.epam.webParsing.service.parser.xmlParser.gemstoneParser.GemstoneSaxParser;
-import com.epam.webParsing.service.parser.xmlParser.gemstoneParser.GemstoneStaxParser;
-import com.epam.webParsing.service.parser.xmlParser.parserType.ParserType;
+import com.epam.webParsing.service.factory.factory_interface.ServiceFactory;
+import com.epam.webParsing.service.parser.parser_interface.XmlParser;
+import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneDomParser;
+import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneSaxParser;
+import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneStaxParser;
+import com.epam.webParsing.service.parser.parser_xml.type.ParserType;
 import com.epam.webParsing.service.reader.FileReader;
-import com.epam.webParsing.service.validator.xml.validatorImpl.XmlValidatorImpl;
-import com.epam.webParsing.service.validator.xml.xmlValidatorInterface.XmlValidator;
-import com.epam.webParsing.service.validator.validatorInterface.Validator;
+import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
+import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
+import com.epam.webParsing.service.validator.validator_interface.Validator;
 
 public class GemstoneServiceFactory implements ServiceFactory {
     @Override

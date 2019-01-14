@@ -1,7 +1,7 @@
-package com.epam.webParsing.service.validator.xml.validatorImpl;
+package com.epam.webParsing.service.validator.xml.validator_impl;
 
 import com.epam.webParsing.service.reader.FileReader;
-import com.epam.webParsing.service.validator.xml.xmlValidatorInterface.XmlValidator;
+import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
 
 import java.io.File;
 
