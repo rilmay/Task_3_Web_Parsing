@@ -1,6 +1,6 @@
 package com.epam.webParsing.entity;
 
-import com.epam.webParsing.entity.XmlEntityInterface.XmlEntity;
+import com.epam.webParsing.entity.xmlEntityInterface.XmlEntity;
 
 import java.util.Objects;
 
