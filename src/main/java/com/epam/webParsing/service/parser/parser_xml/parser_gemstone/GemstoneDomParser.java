@@ -2,7 +2,8 @@ package com.epam.webParsing.service.parser.parser_xml.parser_gemstone;
 
 import com.epam.webParsing.entity.Gemstone;
 import com.epam.webParsing.service.parser.parser_interface.XmlParser;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class GemstoneDomParser implements XmlParser<Gemstone> {
 
-    private static Logger logger = Logger.getLogger(GemstoneDomParser.class.getName());
+    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class.getName());
 
     @Override
     public List<Gemstone> parse(File parsedFile) {

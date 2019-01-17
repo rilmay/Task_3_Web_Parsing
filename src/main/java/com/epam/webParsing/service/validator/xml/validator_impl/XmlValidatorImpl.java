@@ -3,7 +3,8 @@ package com.epam.webParsing.service.validator.xml.validator_impl;
 import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneDomParser;
 import com.epam.webParsing.service.reader.FileReader;
 import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -15,7 +16,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class XmlValidatorImpl implements XmlValidator {
-    private static Logger logger = Logger.getLogger(GemstoneDomParser.class.getName());
+    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class.getName());
     private File xsd;
 
     @Override
@@ -26,17 +27,12 @@ public class XmlValidatorImpl implements XmlValidator {
 
     @Override
     public boolean isValid(File parsedFile) {
-
         try {
             if (!parsedFile.exists()) {
-                logger.info("Не найден XML " + parsedFile.getPath());
+                logger.info("File don`t exist " + parsedFile.getPath());
             }
             if (!xsd.exists()) {
-                logger.info("Не найден XSD " + xsd.getPath());
-            }
-
-            if (!parsedFile.exists() || !xsd.exists()) {
-                return false;
+                logger.info("Xsd is not configured " + xsd.getPath());
             }
 
             SchemaFactory factory = SchemaFactory

@@ -2,9 +2,9 @@ package com.epam.webParsing.service.parser.parser_xml.parser_gemstone;
 
 import com.epam.webParsing.entity.Gemstone;
 import com.epam.webParsing.service.parser.parser_interface.XmlParser;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.parsers.SAXParser;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GemstoneSaxParser implements XmlParser<Gemstone> {
-    private static Logger logger = Logger.getLogger(GemstoneDomParser.class.getName());
+    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class.getName());
 
     @Override
     public List<Gemstone> parse(File parsedFile) {
@@ -34,12 +34,12 @@ public class GemstoneSaxParser implements XmlParser<Gemstone> {
                 Double value;
 
                 @Override
-                public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+                public void startElement(String uri, String localName, String qName, Attributes attributes) {
                     lastElementName = qName;
                 }
 
                 @Override
-                public void characters(char[] ch, int start, int length) throws SAXException {
+                public void characters(char[] ch, int start, int length) {
                     String information = new String(ch, start, length);
                     information = information.replace("\n", "").trim();
                     if (!information.isEmpty()) {
@@ -70,7 +70,7 @@ public class GemstoneSaxParser implements XmlParser<Gemstone> {
                 }
 
                 @Override
-                public void endElement(String uri, String localName, String qName) throws SAXException {
+                public void endElement(String uri, String localName, String qName) {
                     if ((name != null && !name.isEmpty()) && (preciousness != null && !preciousness.isEmpty())
                             && (origin != null && !origin.isEmpty()) && (color != null && !color.isEmpty())
                             && (transparency != null) && (cuttingMethod != null) && (value != null)) {
