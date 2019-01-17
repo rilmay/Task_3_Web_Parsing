@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="banks">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="contribution" type="Contribution" minOccurs="0" maxOccurs="unbounded">
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:complexType name="Contribution">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="country" type="xsd:string"/>
+            <xsd:element name="type">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="demand"/>
+                        <xsd:enumeration value="urgent"/>
+                        <xsd:enumeration value="calculated"/>
+                        <xsd:enumeration value="accumulative"/>
+                        <xsd:enumeration value="saving"/>
+                        <xsd:enumeration value="metal"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="depositor" type="xsd:string"/>
+            <xsd:element name="account_id" type="xsd:integer"/>
+            <xsd:element name="amount_on_deposit" type="xsd:float"/>
+            <xsd:element name="profitability" type="xsd:float"/>
+            <xsd:element name="time_constraints" type="xsd:float"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

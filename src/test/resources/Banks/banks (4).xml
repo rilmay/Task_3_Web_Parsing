@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<banks>
+    <contribution>
+        <name>Kris, Von and Becker</name>
+        <country>Nigeria</country>
+        <type>accumulative</type>
+        <depositor>Gerry Stucksbury</depositor>
+        <account_id>32</account_id>
+        <amount_on_deposit>82.85</amount_on_deposit>
+        <profitability>38.4</profitability>
+        <time_constraints>5</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Gaylord, Koch and Abernathy</name>
+        <country>Poland</country>
+        <type>demand</type>
+        <depositor>Codie Tiffin</depositor>
+        <account_id>5</account_id>
+        <amount_on_deposit>84.9</amount_on_deposit>
+        <profitability>83.9</profitability>
+        <time_constraints>65</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Wintheiser-Eichmann</name>
+        <country>China</country>
+        <type>saving</type>
+        <depositor>Alejandrina Rounsefull</depositor>
+        <account_id>79</account_id>
+        <amount_on_deposit>88.26</amount_on_deposit>
+        <profitability>35.5</profitability>
+        <time_constraints>90</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Gibson LLC</name>
+        <country>Belarus</country>
+        <type>metal</type>
+        <depositor>Codi Elgee</depositor>
+        <account_id>49</account_id>
+        <amount_on_deposit>18.28</amount_on_deposit>
+        <profitability>74.6</profitability>
+        <time_constraints>97</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Nader Inc</name>
+        <country>Vietnam</country>
+        <type>urgent</type>
+        <depositor>Rustin Kharchinski</depositor>
+        <account_id>98</account_id>
+        <amount_on_deposit>85.87</amount_on_deposit>
+        <profitability>27.3</profitability>
+        <time_constraints>7</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Quigley-Wiza</name>
+        <country>Sweden</country>
+        <type>metal</type>
+        <depositor>Gardy Reddin</depositor>
+        <account_id>86</account_id>
+        <amount_on_deposit>33.91</amount_on_deposit>
+        <profitability>80.4</profitability>
+        <time_constraints>88</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Powlowski-Altenwerth</name>
+        <country>China</country>
+        <type>urgent</type>
+        <depositor>Alvie Paris</depositor>
+        <account_id>86</account_id>
+        <amount_on_deposit>78.76</amount_on_deposit>
+        <profitability>10.3</profitability>
+        <time_constraints>56</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Boyle, Parisian and Romaguera</name>
+        <country>Malaysia</country>
+        <type>accumulative</type>
+        <depositor>Clayborn Ketteringham</depositor>
+        <account_id>37</account_id>
+        <amount_on_deposit>77.43</amount_on_deposit>
+        <profitability>80.2</profitability>
+        <time_constraints>61</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Watsica-Waters</name>
+        <country>Thailand</country>
+        <type>accumulative</type>
+        <depositor>Yale Hallaways</depositor>
+        <account_id>7</account_id>
+        <amount_on_deposit>26.3</amount_on_deposit>
+        <profitability>18.0</profitability>
+        <time_constraints>64</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Wintheiser, Schaefer and Aufderhar</name>
+        <country>Brazil</country>
+        <type>saving</type>
+        <depositor>Sibella Karleman</depositor>
+        <account_id>76</account_id>
+        <amount_on_deposit>17.83</amount_on_deposit>
+        <profitability>76.8</profitability>
+        <time_constraints>32</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Kling Group</name>
+        <country>Saudi Arabia</country>
+        <type>calculated</type>
+        <depositor>Sonni Kitter</depositor>
+        <account_id>65</account_id>
+        <amount_on_deposit>28.32</amount_on_deposit>
+        <profitability>87.3</profitability>
+        <time_constraints>81</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Jaskolski-Mayer</name>
+        <country>Azerbaijan</country>
+        <type>demand</type>
+        <depositor>Adams Wloch</depositor>
+        <account_id>53</account_id>
+        <amount_on_deposit>75.8</amount_on_deposit>
+        <profitability>78.2</profitability>
+        <time_constraints>39</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Funk-Eichmann</name>
+        <country>Peru</country>
+        <type>saving</type>
+        <depositor>Ritchie Denecamp</depositor>
+        <account_id>27</account_id>
+        <amount_on_deposit>64.06</amount_on_deposit>
+        <profitability>35.4</profitability>
+        <time_constraints>19</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Nicolas, Casper and Ondricka</name>
+        <country>Estonia</country>
+        <type>calculated</type>
+        <depositor>Dyana Stovell</depositor>
+        <account_id>22</account_id>
+        <amount_on_deposit>6.04</amount_on_deposit>
+        <profitability>77.6</profitability>
+        <time_constraints>96</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Armstrong-Shields</name>
+        <country>Indonesia</country>
+        <type>calculated</type>
+        <depositor>Maria Daile</depositor>
+        <account_id>32</account_id>
+        <amount_on_deposit>92.29</amount_on_deposit>
+        <profitability>69.0</profitability>
+        <time_constraints>92</time_constraints>
+    </contribution>
+</banks>

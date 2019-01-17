@@ -12,7 +12,7 @@ public class FileReader {
     public File read(String path) {
         File file = new File(path);
         if (!file.exists() || !file.isFile()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("File does not exist or not a file");
         }
         return file;
     }

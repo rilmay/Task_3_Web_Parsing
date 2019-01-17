@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<banks>
+    <contribution>
+        <name>Rolfson, Paucek and Haag</name>
+        <country>Indonesia</country>
+        <type>calculated</type>
+        <depositor>Edwina Pearsall</depositor>
+        <account_id>14</account_id>
+        <amount_on_deposit>56.11</amount_on_deposit>
+        <profitability>72.9</profitability>
+        <time_constraints>77</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Tremblay, Hermiston and Macejkovic</name>
+        <country>Philippines</country>
+        <type>metal</type>
+        <depositor>Gerardo Anderson</depositor>
+        <account_id>74</account_id>
+        <amount_on_deposit>38.75</amount_on_deposit>
+        <profitability>44.2</profitability>
+        <time_constraints>83</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Aufderhar-Wolff</name>
+        <country>China</country>
+        <type>demand</type>
+        <depositor>Armstrong Soars</depositor>
+        <account_id>42</account_id>
+        <amount_on_deposit>14.87</amount_on_deposit>
+        <profitability>58.6</profitability>
+        <time_constraints>86</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Grimes-Bernhard</name>
+        <country>Greece</country>
+        <type>calculated</type>
+        <depositor>Nicko Hemmingway</depositor>
+        <account_id>87</account_id>
+        <amount_on_deposit>59.79</amount_on_deposit>
+        <profitability>19.0</profitability>
+        <time_constraints>79</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Wolff Inc</name>
+        <country>Poland</country>
+        <type>saving</type>
+        <depositor>Adriena Martins</depositor>
+        <account_id>57</account_id>
+        <amount_on_deposit>13.05</amount_on_deposit>
+        <profitability>61.4</profitability>
+        <time_constraints>88</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Boehm-Stoltenberg</name>
+        <country>Albania</country>
+        <type>metal</type>
+        <depositor>Panchito Minnock</depositor>
+        <account_id>14</account_id>
+        <amount_on_deposit>30.64</amount_on_deposit>
+        <profitability>46.0</profitability>
+        <time_constraints>34</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Kunde Group</name>
+        <country>China</country>
+        <type>urgent</type>
+        <depositor>Millisent Hassent</depositor>
+        <account_id>20</account_id>
+        <amount_on_deposit>50.62</amount_on_deposit>
+        <profitability>21.5</profitability>
+        <time_constraints>28</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Feeney, Mann and Jaskolski</name>
+        <country>Burundi</country>
+        <type>urgent</type>
+        <depositor>Emili Denny</depositor>
+        <account_id>9</account_id>
+        <amount_on_deposit>93.76</amount_on_deposit>
+        <profitability>71.8</profitability>
+        <time_constraints>75</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Gorczany, Lynch and Schmeler</name>
+        <country>China</country>
+        <type>urgent</type>
+        <depositor>Gram Duke</depositor>
+        <account_id>27</account_id>
+        <amount_on_deposit>45.75</amount_on_deposit>
+        <profitability>89.7</profitability>
+        <time_constraints>98</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Nitzsche, Mann and Leffler</name>
+        <country>Palestinian Territory</country>
+        <type>metal</type>
+        <depositor>Hewie Balsom</depositor>
+        <account_id>92</account_id>
+        <amount_on_deposit>45.04</amount_on_deposit>
+        <profitability>90.4</profitability>
+        <time_constraints>63</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Wisozk-Doyle</name>
+        <country>China</country>
+        <type>metal</type>
+        <depositor>Rudolfo Doyle</depositor>
+        <account_id>55</account_id>
+        <amount_on_deposit>19.02</amount_on_deposit>
+        <profitability>72.2</profitability>
+        <time_constraints>66</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Olson, Lubowitz and Conn</name>
+        <country>Russia</country>
+        <type>urgent</type>
+        <depositor>Rossy Greenwood</depositor>
+        <account_id>58</account_id>
+        <amount_on_deposit>23.16</amount_on_deposit>
+        <profitability>58.6</profitability>
+        <time_constraints>55</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Erdman, Wolf and Koelpin</name>
+        <country>South Africa</country>
+        <type>accumulative</type>
+        <depositor>Lynette Garron</depositor>
+        <account_id>15</account_id>
+        <amount_on_deposit>36.04</amount_on_deposit>
+        <profitability>38.5</profitability>
+        <time_constraints>97</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Harris and Sons</name>
+        <country>Syria</country>
+        <type>calculated</type>
+        <depositor>Bibby Fussie</depositor>
+        <account_id>8</account_id>
+        <amount_on_deposit>99.12</amount_on_deposit>
+        <profitability>50.5</profitability>
+        <time_constraints>24</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Satterfield, Hodkiewicz and Runolfsson</name>
+        <country>Philippines</country>
+        <type>urgent</type>
+        <depositor>Joya Dohr</depositor>
+        <account_id>12</account_id>
+        <amount_on_deposit>2.14</amount_on_deposit>
+        <profitability>94.8</profitability>
+        <time_constraints>66</time_constraints>
+    </contribution>
+</banks>

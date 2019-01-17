@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<banks>
+    <contribution>
+        <name>Nolan-Olson</name>
+        <country>Indonesia</country>
+        <type>urgent</type>
+        <depositor>Antonie Oliveti</depositor>
+        <account_id>44</account_id>
+        <amount_on_deposit>58.09</amount_on_deposit>
+        <profitability>3.4</profitability>
+        <time_constraints>36</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Powlowski, Dicki and Halvorson</name>
+        <country>Indonesia</country>
+        <type>calculated</type>
+        <depositor>Leonelle Barge</depositor>
+        <account_id>46</account_id>
+        <amount_on_deposit>10.97</amount_on_deposit>
+        <profitability>16.1</profitability>
+        <time_constraints>64</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Bernhard, Hilll and Abernathy</name>
+        <country>Paraguay</country>
+        <type>metal</type>
+        <depositor>Margette Naulls</depositor>
+        <account_id>72</account_id>
+        <amount_on_deposit>28.21</amount_on_deposit>
+        <profitability>42.9</profitability>
+        <time_constraints>46</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Klocko and Sons</name>
+        <country>Russia</country>
+        <type>saving</type>
+        <depositor>Faustina Wanden</depositor>
+        <account_id>8</account_id>
+        <amount_on_deposit>65.77</amount_on_deposit>
+        <profitability>11.1</profitability>
+        <time_constraints>24</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Rutherford-Senger</name>
+        <country>Canada</country>
+        <type>urgent</type>
+        <depositor>Trula Minico</depositor>
+        <account_id>93</account_id>
+        <amount_on_deposit>22.11</amount_on_deposit>
+        <profitability>61.1</profitability>
+        <time_constraints>13</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Fahey-Mraz</name>
+        <country>Poland</country>
+        <type>metal</type>
+        <depositor>Sancho Hutcheon</depositor>
+        <account_id>43</account_id>
+        <amount_on_deposit>35.07</amount_on_deposit>
+        <profitability>50.2</profitability>
+        <time_constraints>60</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Pfeffer and Sons</name>
+        <country>Czech Republic</country>
+        <type>demand</type>
+        <depositor>Daniela Bagnold</depositor>
+        <account_id>3</account_id>
+        <amount_on_deposit>76.79</amount_on_deposit>
+        <profitability>26.9</profitability>
+        <time_constraints>22</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Hodkiewicz, Waters and Wiza</name>
+        <country>Germany</country>
+        <type>saving</type>
+        <depositor>Iolanthe Griffithe</depositor>
+        <account_id>50</account_id>
+        <amount_on_deposit>46.73</amount_on_deposit>
+        <profitability>22.5</profitability>
+        <time_constraints>85</time_constraints>
+    </contribution>
+    <contribution>
+        <name>McClure, Reynolds and Lindgren</name>
+        <country>Finland</country>
+        <type>calculated</type>
+        <depositor>Lyn O'Collopy</depositor>
+        <account_id>84</account_id>
+        <amount_on_deposit>24.48</amount_on_deposit>
+        <profitability>72.6</profitability>
+        <time_constraints>69</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Quigley-O'Conner</name>
+        <country>Belarus</country>
+        <type>urgent</type>
+        <depositor>Kaile Baltzar</depositor>
+        <account_id>45</account_id>
+        <amount_on_deposit>65.45</amount_on_deposit>
+        <profitability>2.7</profitability>
+        <time_constraints>63</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Kerluke-Smitham</name>
+        <country>China</country>
+        <type>demand</type>
+        <depositor>Ranice Duckerin</depositor>
+        <account_id>3</account_id>
+        <amount_on_deposit>20.05</amount_on_deposit>
+        <profitability>17.8</profitability>
+        <time_constraints>28</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Sanford Group</name>
+        <country>Japan</country>
+        <type>accumulative</type>
+        <depositor>Charmine Zink</depositor>
+        <account_id>18</account_id>
+        <amount_on_deposit>90.3</amount_on_deposit>
+        <profitability>64.8</profitability>
+        <time_constraints>5</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Schneider, Schulist and Collier</name>
+        <country>Palestinian Territory</country>
+        <type>saving</type>
+        <depositor>Monti Madgwick</depositor>
+        <account_id>51</account_id>
+        <amount_on_deposit>57.32</amount_on_deposit>
+        <profitability>69.7</profitability>
+        <time_constraints>59</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Gleason and Sons</name>
+        <country>China</country>
+        <type>calculated</type>
+        <depositor>Sara-ann Bertson</depositor>
+        <account_id>20</account_id>
+        <amount_on_deposit>26.6</amount_on_deposit>
+        <profitability>32.1</profitability>
+        <time_constraints>38</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Jast-Schuster</name>
+        <country>Russia</country>
+        <type>metal</type>
+        <depositor>Edwin Toulmin</depositor>
+        <account_id>55</account_id>
+        <amount_on_deposit>67.41</amount_on_deposit>
+        <profitability>26.2</profitability>
+        <time_constraints>97</time_constraints>
+    </contribution>
+</banks>

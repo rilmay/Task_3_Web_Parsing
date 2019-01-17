@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<banks>
+    <contribution>
+        <name>Kessler and Sons</name>
+        <country>Malaysia</country>
+        <type>accumulative</type>
+        <depositor>Alisha Pennini</depositor>
+        <account_id>17</account_id>
+        <amount_on_deposit>90.41</amount_on_deposit>
+        <profitability>90.7</profitability>
+        <time_constraints>51</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Littel-Labadie</name>
+        <country>Russia</country>
+        <type>demanded</type>
+        <depositor>Rani Wastie</depositor>
+        <account_id>77</account_id>
+        <amount_on_deposit>24.01</amount_on_deposit>
+        <profitability>58.9</profitability>
+        <time_constraints>47</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Lueilwitz-Sanford</name>
+        <country>Poland</country>
+        <type>saving</type>
+        <depositor>Nicole Cammish</depositor>
+        <account_id>87</account_id>
+        <amount_on_deposit>98.34</amount_on_deposit>
+        <profitability>47.1</profitability>
+        <time_constraints>68</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Jast, Rolfson and Kertzmann</name>
+        <country>Afghanistan</country>
+        <type>saving</type>
+        <depositor>Arin Aylmore</depositor>
+        <account_id>48</account_id>
+        <amount_on_deposit>99.04</amount_on_deposit>
+        <profitability>41.6</profitability>
+        <time_constraints>14</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Sporer Group</name>
+        <country>Mexico</country>
+        <type>urgent</type>
+        <depositor>Christoper Newarte</depositor>
+        <account_id>28</account_id>
+        <amount_on_deposit>75.92</amount_on_deposit>
+        <profitability>29.9</profitability>
+        <time_constraints>40</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Ritchie, Hickle and Marvin</name>
+        <country>Ireland</country>
+        <type>saving</type>
+        <depositor>Rogers Lorne</depositor>
+        <account_id>45</account_id>
+        <amount_on_deposit>30.35</amount_on_deposit>
+        <profitability>6.3</profitability>
+        <time_constraints>91</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Schroeder, Jacobi and Mertz</name>
+        <country>Portugal</country>
+        <type>urgent</type>
+        <depositor>Hank Selburn</depositor>
+        <account_id>81</account_id>
+        <amount_on_deposit>3.35</amount_on_deposit>
+        <profitability>38.8</profitability>
+        <time_constraints>12</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Harber LLC</name>
+        <country>Indonesia</country>
+        <type>calculated</type>
+        <depositor>Rolfe Burdus</depositor>
+        <account_id>61</account_id>
+        <amount_on_deposit>82.96</amount_on_deposit>
+        <profitability>66.7</profitability>
+        <time_constraints>8</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Goodwin and Sons</name>
+        <country>China</country>
+        <type>calculated</type>
+        <depositor>Kara-lynn Sherringham</depositor>
+        <account_id>96</account_id>
+        <amount_on_deposit>91.16</amount_on_deposit>
+        <profitability>29.5</profitability>
+        <time_constraints>52</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Bruen-Jones</name>
+        <country>Poland</country>
+        <type>demand</type>
+        <depositor>Jill Grahlmans</depositor>
+        <account_id>29</account_id>
+        <amount_on_deposit>91.67</amount_on_deposit>
+        <profitability>13.5</profitability>
+        <time_constraints>56</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Bashirian, Dicki and Stiedemann</name>
+        <country>Poland</country>
+        <type>accumulative</type>
+        <depositor>Bradly Tash</depositor>
+        <account_id>1</account_id>
+        <amount_on_deposit>4.51</amount_on_deposit>
+        <profitability>36.3</profitability>
+        <time_constraints>11</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Fisher-Quitzon</name>
+        <country>Mongolia</country>
+        <type>urgent</type>
+        <depositor>Jobey Joysey</depositor>
+        <account_id>95</account_id>
+        <amount_on_deposit>14.05</amount_on_deposit>
+        <profitability>19.3</profitability>
+        <time_constraints>4</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Kuhlman LLC</name>
+        <country>Czech Republic</country>
+        <type>calculated</type>
+        <depositor>Todd Cutbush</depositor>
+        <account_id>52</account_id>
+        <amount_on_deposit>14.84</amount_on_deposit>
+        <profitability>54.4</profitability>
+        <time_constraints>88</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Lakin and Sons</name>
+        <country>Taiwan</country>
+        <type>demand</type>
+        <depositor>Karim Scarff</depositor>
+        <account_id>58</account_id>
+        <amount_on_deposit>97.46</amount_on_deposit>
+        <profitability>61.0</profitability>
+        <time_constraints>25</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Prosacco-Beier</name>
+        <country>France</country>
+        <type>demand</type>
+        <depositor>Nelle Ansteys</depositor>
+        <account_id>16</account_id>
+        <amount_on_deposit>35.42</amount_on_deposit>
+        <profitability>76.3</profitability>
+        <time_constraints>1</time_constraints>
+    </contribution>
+</banks>

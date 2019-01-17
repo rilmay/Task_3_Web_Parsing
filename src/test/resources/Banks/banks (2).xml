@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<banks>
+    <contribution>
+        <name>Reilly-Cummerata</name>
+        <country>Afghanistan</country>
+        <type>demand</type>
+        <depositor>Stanford Vedenyapin</depositor>
+        <account_id>34</account_id>
+        <amount_on_deposit>45.54</amount_on_deposit>
+        <profitability>2.9</profitability>
+        <time_constraints>83</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Lebsack, Bartell and Schultz</name>
+        <country>Portugal</country>
+        <type>saving</type>
+        <depositor>Yvor Fransman</depositor>
+        <account_id>9</account_id>
+        <amount_on_deposit>40.4</amount_on_deposit>
+        <profitability>95.1</profitability>
+        <time_constraints>88</time_constraints>
+    </contribution>
+    <contribution>
+        <name>McGlynn-Hegmann</name>
+        <country>China</country>
+        <type>calculated</type>
+        <depositor>Carla Audiss</depositor>
+        <account_id>74</account_id>
+        <amount_on_deposit>77.76</amount_on_deposit>
+        <profitability>75.1</profitability>
+        <time_constraints>26</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Rau and Sons</name>
+        <country>Philippines</country>
+        <type>accumulative</type>
+        <depositor>Vladamir Sharp</depositor>
+        <account_id>53</account_id>
+        <amount_on_deposit>63.12</amount_on_deposit>
+        <profitability>87.3</profitability>
+        <time_constraints>85</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Feeney-Hamill</name>
+        <country>Indonesia</country>
+        <type>saving</type>
+        <depositor>Jemimah Liley</depositor>
+        <account_id>89</account_id>
+        <amount_on_deposit>64.99</amount_on_deposit>
+        <profitability>16.3</profitability>
+        <time_constraints>33</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Johnston, Pacocha and Heathcote</name>
+        <country>Ukraine</country>
+        <type>calculated</type>
+        <depositor>Garth Jenckes</depositor>
+        <account_id>7</account_id>
+        <amount_on_deposit>9.01</amount_on_deposit>
+        <profitability>44.9</profitability>
+        <time_constraints>79</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Boyle and Sons</name>
+        <country>Czech Republic</country>
+        <type>metal</type>
+        <depositor>Pansie Barbery</depositor>
+        <account_id>74</account_id>
+        <amount_on_deposit>5.07</amount_on_deposit>
+        <profitability>34.1</profitability>
+        <time_constraints>81</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Larkin-Christiansen</name>
+        <country>Malaysia</country>
+        <type>demand</type>
+        <depositor>Colin Merrisson</depositor>
+        <account_id>91</account_id>
+        <amount_on_deposit>3.27</amount_on_deposit>
+        <profitability>40.7</profitability>
+        <time_constraints>53</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Wisozk, Rutherford and Metz</name>
+        <country>Nigeria</country>
+        <type>urgent</type>
+        <depositor>Uriah Wellman</depositor>
+        <account_id>90</account_id>
+        <amount_on_deposit>36.43</amount_on_deposit>
+        <profitability>5.4</profitability>
+        <time_constraints>62</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Murazik Inc</name>
+        <country>Russia</country>
+        <type>demand</type>
+        <depositor>Charita Sworne</depositor>
+        <account_id>9</account_id>
+        <amount_on_deposit>30.3</amount_on_deposit>
+        <profitability>81.4</profitability>
+        <time_constraints>57</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Altenwerth-Labadie</name>
+        <country>France</country>
+        <type>calculated</type>
+        <depositor>Isidoro Bawden</depositor>
+        <account_id>46</account_id>
+        <amount_on_deposit>45.78</amount_on_deposit>
+        <profitability>73.9</profitability>
+        <time_constraints>39</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Langworth, Reichert and Pagac</name>
+        <country>Philippines</country>
+        <type>metal</type>
+        <depositor>Kassey Dable</depositor>
+        <account_id>72</account_id>
+        <amount_on_deposit>64.19</amount_on_deposit>
+        <profitability>49.8</profitability>
+        <time_constraints>64</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Von-Vandervort</name>
+        <country>Yemen</country>
+        <type>metal</type>
+        <depositor>Jacquetta Clarae</depositor>
+        <account_id>28</account_id>
+        <amount_on_deposit>70.77</amount_on_deposit>
+        <profitability>10.3</profitability>
+        <time_constraints>74</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Johnston and Sons</name>
+        <country>Russia</country>
+        <type>accumulative</type>
+        <depositor>Isadora Viscovi</depositor>
+        <account_id>23</account_id>
+        <amount_on_deposit>70.12</amount_on_deposit>
+        <profitability>51.3</profitability>
+        <time_constraints>94</time_constraints>
+    </contribution>
+    <contribution>
+        <name>Satterfield and Sons</name>
+        <country>Indonesia</country>
+        <type>calculated</type>
+        <depositor>Ray Dibnah</depositor>
+        <account_id>10</account_id>
+        <amount_on_deposit>38.73</amount_on_deposit>
+        <profitability>96.3</profitability>
+        <time_constraints>88</time_constraints>
+    </contribution>
+</banks>
