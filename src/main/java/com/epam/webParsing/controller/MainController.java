@@ -1,18 +1,18 @@
 package com.epam.webParsing.controller;
 
+import com.epam.webParsing.entity.entity_interface.XmlEntity;
+import com.epam.webParsing.entity.type.EntityType;
 import com.epam.webParsing.service.factory.abstract_factory.XmlFactory;
 import com.epam.webParsing.service.factory.factory_interface.ServiceFactory;
 import com.epam.webParsing.service.parser.parser_interface.XmlParser;
 import com.epam.webParsing.service.parser.parser_xml.type.ParserType;
 import com.epam.webParsing.service.validator.validator_interface.Validator;
-import com.epam.webParsing.entity.entity_interface.XmlEntity;
-import com.epam.webParsing.entity.type.EntityType;
 
 import java.io.File;
 import java.util.List;
 
 public class MainController {
-    List<XmlEntity> readFileAndReturnParsed(String path, EntityType entityType) {
+    public List<XmlEntity> readFileAndReturnParsed(String path, EntityType entityType) {
         XmlFactory xmlFactory = XmlFactory.getInstance();
         ServiceFactory serviceFactory = xmlFactory.getFactoryByType(entityType);
         File parsedFile = serviceFactory.getFileReader().read(path);
@@ -20,7 +20,7 @@ public class MainController {
         if (!validator.isValid(parsedFile)) {
             throw new IllegalArgumentException("Incorrect file");
         }
-        XmlParser<XmlEntity> domParser = serviceFactory.getParserByType(ParserType.DOM);
+        XmlParser<XmlEntity> domParser = serviceFactory.getParserByType(ParserType.STAX);
         return domParser.parse(parsedFile);
     }
 }

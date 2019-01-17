@@ -7,11 +7,14 @@ import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneSax
 import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneStaxParser;
 import com.epam.webParsing.service.parser.parser_xml.type.ParserType;
 import com.epam.webParsing.service.reader.FileReader;
-import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
-import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
 import com.epam.webParsing.service.validator.validator_interface.Validator;
+import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
+import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
 
 public class GemstoneServiceFactory implements ServiceFactory {
+
+    private static final String XSD_GEMSTONE_PATH = "src/main/resources/Gemstone.xsd";
+
     @Override
     public FileReader getFileReader() {
         return FileReader.getInstance();
@@ -20,7 +23,7 @@ public class GemstoneServiceFactory implements ServiceFactory {
     @Override
     public Validator getXmlValidator() {
         XmlValidator validator = new XmlValidatorImpl();
-        validator.setXsd(null);
+        validator.setXsd(XSD_GEMSTONE_PATH);
         return validator;
     }
 

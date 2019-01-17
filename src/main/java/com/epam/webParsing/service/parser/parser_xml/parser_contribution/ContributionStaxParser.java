@@ -1,7 +1,7 @@
 package com.epam.webParsing.service.parser.parser_xml.parser_contribution;
 
-import com.epam.webParsing.service.parser.parser_interface.XmlParser;
 import com.epam.webParsing.entity.Contribution;
+import com.epam.webParsing.service.parser.parser_interface.XmlParser;
 
 import java.io.File;
 import java.util.List;
