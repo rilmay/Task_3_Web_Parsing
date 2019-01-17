@@ -12,7 +12,7 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="Preciousness" default="полудрагоценный">
+                            <xs:element name="Preciousness" default="semiprecious">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:enumeration value="precious"/>

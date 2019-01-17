@@ -1,179 +1,168 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Gems>
     <Gem>
-        <Name>Tori</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>China</Origin>
+        <Name>Trey</Name>
+        <Preciousness>semiprecious</Preciousness>
+        <Origin>Ukraine</Origin>
         <VisualParameters>
-            <Color>Mauv</Color>
+            <Color>Puce</Color>
             <Transparency>31</Transparency>
-            <CuttingMethod>15</CuttingMethod>
+            <CuttingMethod>14</CuttingMethod>
         </VisualParameters>
-        <Value>148</Value>
+        <Value>66</Value>
     </Gem>
     <Gem>
-        <Name>Fernanda</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>China</Origin>
-        <VisualParameters>
-            <Color>Orange</Color>
-            <Transparency>94</Transparency>
-            <CuttingMethod>11</CuttingMethod>
-        </VisualParameters>
-        <Value>124</Value>
-    </Gem>
-    <Gem>
-        <Name>Angelia</Name>
-        <Preciousness>полудрагоценный</Preciousness>
-        <Origin>Somalia</Origin>
-        <VisualParameters>
-            <Color>Indigo</Color>
-            <Transparency>14</Transparency>
-            <CuttingMethod>13</CuttingMethod>
-        </VisualParameters>
-        <Value>99</Value>
-    </Gem>
-    <Gem>
-        <Name>Mia</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Mexico</Origin>
-        <VisualParameters>
-            <Color>Crimson</Color>
-            <Transparency>89</Transparency>
-            <CuttingMethod>7</CuttingMethod>
-        </VisualParameters>
-        <Value>23</Value>
-    </Gem>
-    <Gem>
-        <Name>Bert</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Indonesia</Origin>
-        <VisualParameters>
-            <Color>Mauv</Color>
-            <Transparency>53</Transparency>
-            <CuttingMethod>5</CuttingMethod>
-        </VisualParameters>
-        <Value>157</Value>
-    </Gem>
-    <Gem>
-        <Name>Helenka</Name>
-        <Preciousness>драгоценный</Preciousness>
+        <Name>Dean</Name>
+        <Preciousness>precious</Preciousness>
         <Origin>China</Origin>
         <VisualParameters>
             <Color>Aquamarine</Color>
-            <Transparency>79</Transparency>
-            <CuttingMethod>5</CuttingMethod>
+            <Transparency>75</Transparency>
+            <CuttingMethod>10</CuttingMethod>
         </VisualParameters>
-        <Value>133</Value>
+        <Value>12</Value>
     </Gem>
     <Gem>
-        <Name>Bambi</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Russia</Origin>
+        <Name>Malina</Name>
+        <Preciousness>Semiprecious</Preciousness>
+        <Origin>Kenya</Origin>
         <VisualParameters>
-            <Color>Blue</Color>
-            <Transparency>34</Transparency>
-            <CuttingMethod>15</CuttingMethod>
+            <Color>Mauv</Color>
+            <Transparency>43</Transparency>
+            <CuttingMethod>7</CuttingMethod>
         </VisualParameters>
-        <Value>147</Value>
+        <Value>70</Value>
     </Gem>
     <Gem>
-        <Name>Margette</Name>
-        <Preciousness>драгоценный</Preciousness>
+        <Name>Gina</Name>
+        <Preciousness>semiprecious</Preciousness>
+        <Origin>China</Origin>
+        <VisualParameters>
+            <Color>Teal</Color>
+            <Transparency>61</Transparency>
+            <CuttingMethod>8</CuttingMethod>
+        </VisualParameters>
+        <Value>45</Value>
+    </Gem>
+    <Gem>
+        <Name>Rodie</Name>
+        <Preciousness>Precious</Preciousness>
         <Origin>United States</Origin>
         <VisualParameters>
-            <Color>Violet</Color>
-            <Transparency>26</Transparency>
+            <Color>Turquoise</Color>
+            <Transparency>85</Transparency>
             <CuttingMethod>13</CuttingMethod>
         </VisualParameters>
-        <Value>137</Value>
+        <Value>89</Value>
     </Gem>
     <Gem>
-        <Name>Isabelita</Name>
-        <Preciousness>полудрагоценный</Preciousness>
-        <Origin>Ukraine</Origin>
+        <Name>Brnaby</Name>
+        <Preciousness>Precious</Preciousness>
+        <Origin>Poland</Origin>
         <VisualParameters>
-            <Color>Turquoise</Color>
-            <Transparency>38</Transparency>
-            <CuttingMethod>12</CuttingMethod>
-        </VisualParameters>
-        <Value>134</Value>
-    </Gem>
-    <Gem>
-        <Name>Vernice</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Argentina</Origin>
-        <VisualParameters>
-            <Color>Yellow</Color>
-            <Transparency>26</Transparency>
+            <Color>Maroon</Color>
+            <Transparency>7</Transparency>
             <CuttingMethod>15</CuttingMethod>
         </VisualParameters>
-        <Value>91</Value>
+        <Value>47</Value>
     </Gem>
     <Gem>
-        <Name>Delila</Name>
-        <Preciousness>полудрагоценный</Preciousness>
-        <Origin>Czech Republic</Origin>
+        <Name>Archy</Name>
+        <Preciousness>semiprecious</Preciousness>
+        <Origin>Ireland</Origin>
         <VisualParameters>
-            <Color>Turquoise</Color>
-            <Transparency>80</Transparency>
+            <Color>Mauv</Color>
+            <Transparency>43</Transparency>
+            <CuttingMethod>4</CuttingMethod>
+        </VisualParameters>
+        <Value>47</Value>
+    </Gem>
+    <Gem>
+        <Name>Mallorie</Name>
+        <Preciousness>Precious</Preciousness>
+        <Origin>Indonesia</Origin>
+        <VisualParameters>
+            <Color>Puce</Color>
+            <Transparency>9</Transparency>
+            <CuttingMethod>14</CuttingMethod>
+        </VisualParameters>
+        <Value>26</Value>
+    </Gem>
+    <Gem>
+        <Name>Bartholomew</Name>
+        <Preciousness>precious</Preciousness>
+        <Origin>Indonesia</Origin>
+        <VisualParameters>
+            <Color>Indigo</Color>
+            <Transparency>70</Transparency>
+            <CuttingMethod>4</CuttingMethod>
+        </VisualParameters>
+        <Value>5</Value>
+    </Gem>
+    <Gem>
+        <Name>Cass</Name>
+        <Preciousness>precious</Preciousness>
+        <Origin>Indonesia</Origin>
+        <VisualParameters>
+            <Color>Orange</Color>
+            <Transparency>34</Transparency>
+            <CuttingMethod>8</CuttingMethod>
+        </VisualParameters>
+        <Value>20</Value>
+    </Gem>
+    <Gem>
+        <Name>Nahum</Name>
+        <Preciousness>semiprecious</Preciousness>
+        <Origin>Serbia</Origin>
+        <VisualParameters>
+            <Color>Maroon</Color>
+            <Transparency>13</Transparency>
+            <CuttingMethod>13</CuttingMethod>
+        </VisualParameters>
+        <Value>93</Value>
+    </Gem>
+    <Gem>
+        <Name>Lucretia</Name>
+        <Preciousness>precious</Preciousness>
+        <Origin>Philippines</Origin>
+        <VisualParameters>
+            <Color>Khaki</Color>
+            <Transparency>50</Transparency>
+            <CuttingMethod>8</CuttingMethod>
+        </VisualParameters>
+        <Value>78</Value>
+    </Gem>
+    <Gem>
+        <Name>Inez</Name>
+        <Preciousness>Semiprecious</Preciousness>
+        <Origin>Greece</Origin>
+        <VisualParameters>
+            <Color>Yellow</Color>
+            <Transparency>2</Transparency>
+            <CuttingMethod>10</CuttingMethod>
+        </VisualParameters>
+        <Value>4</Value>
+    </Gem>
+    <Gem>
+        <Name>Noe</Name>
+        <Preciousness>precious</Preciousness>
+        <Origin>Sudan</Origin>
+        <VisualParameters>
+            <Color>Yellow</Color>
+            <Transparency>47</Transparency>
             <CuttingMethod>5</CuttingMethod>
         </VisualParameters>
         <Value>67</Value>
     </Gem>
     <Gem>
-        <Name>Rahel</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Morocco</Origin>
+        <Name>Emmy</Name>
+        <Preciousness>Semiprecious</Preciousness>
+        <Origin>Czech Republic</Origin>
         <VisualParameters>
-            <Color>Aquamarine</Color>
-            <Transparency>33</Transparency>
-            <CuttingMethod>5</CuttingMethod>
+            <Color>Yellow</Color>
+            <Transparency>41</Transparency>
+            <CuttingMethod>4</CuttingMethod>
         </VisualParameters>
-        <Value>197</Value>
-    </Gem>
-    <Gem>
-        <Name>Saree</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Sierra Leone</Origin>
-        <VisualParameters>
-            <Color>Khaki</Color>
-            <Transparency>100</Transparency>
-            <CuttingMethod>13</CuttingMethod>
-        </VisualParameters>
-        <Value>76</Value>
-    </Gem>
-    <Gem>
-        <Name>Jody</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>China</Origin>
-        <VisualParameters>
-            <Color>Goldenrod</Color>
-            <Transparency>49</Transparency>
-            <CuttingMethod>9</CuttingMethod>
-        </VisualParameters>
-        <Value>113</Value>
-    </Gem>
-    <Gem>
-        <Name>Cindie</Name>
-        <Preciousness>полудрагоценный</Preciousness>
-        <Origin>France</Origin>
-        <VisualParameters>
-            <Color>Orange</Color>
-            <Transparency>36</Transparency>
-            <CuttingMethod>6</CuttingMethod>
-        </VisualParameters>
-        <Value>69</Value>
-    </Gem>
-    <Gem>
-        <Name>Dorothee</Name>
-        <Preciousness>драгоценный</Preciousness>
-        <Origin>Japan</Origin>
-        <VisualParameters>
-            <Color>Pink</Color>
-            <Transparency>29</Transparency>
-            <CuttingMethod>12</CuttingMethod>
-        </VisualParameters>
-        <Value>23</Value>
+        <Value>9</Value>
     </Gem>
 </Gems>
