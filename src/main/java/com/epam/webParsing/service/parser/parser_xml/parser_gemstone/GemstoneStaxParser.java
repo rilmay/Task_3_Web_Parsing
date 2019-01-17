@@ -35,7 +35,7 @@ public class GemstoneStaxParser implements XmlParser<Gemstone> {
                 xmlEvent = xmlEventReader.nextEvent();
                 if (xmlEvent.isStartElement()) {
                     startElement = xmlEvent.asStartElement();
-                    parseGemAttributes();
+                    getGemAttributes();
 
                 }
                 if (xmlEvent.isEndElement()) {
@@ -53,7 +53,7 @@ public class GemstoneStaxParser implements XmlParser<Gemstone> {
         return gemstoneList;
     }
 
-    private void parseGemAttributes() {
+    private void getGemAttributes() {
         try {
             switch (startElement.getName().getLocalPart()) {
                 case "Gem":
