@@ -5,7 +5,7 @@
                 <xs:element name="Gem" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:all>
-                            <xs:element name="Name" default="no data">
+                            <xs:element name="Name">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:pattern value=".+"/>
@@ -15,18 +15,18 @@
                             <xs:element name="Preciousness" default="полудрагоценный">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:enumeration value="драгоценный"/>
-                                        <xs:enumeration value="полудрагоценный"/>
-                                        <xs:enumeration value="Драгоценный"/>
-                                        <xs:enumeration value="Полудрагоценный"/>
+                                        <xs:enumeration value="precious"/>
+                                        <xs:enumeration value="semiprecious"/>
+                                        <xs:enumeration value="Precious"/>
+                                        <xs:enumeration value="Semiprecious"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element type="xs:string" name="Origin" default="no data"/>
+                            <xs:element type="xs:string" name="Origin"/>
                             <xs:element name="VisualParameters" minOccurs="0" maxOccurs="1">
                                 <xs:complexType>
                                     <xs:all>
-                                        <xs:element type="xs:string" minOccurs="0" name="Color" default="no data"/>
+                                        <xs:element type="xs:string" minOccurs="0" name="Color"/>
                                         <xs:element name="Transparency" minOccurs="0" default="0">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:double">
@@ -46,7 +46,7 @@
                                     </xs:all>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Value" default="0">
+                            <xs:element name="Value" default="1">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:double">
                                         <xs:minInclusive value="0"/>

@@ -15,6 +15,13 @@ public class Gemstone implements XmlEntity {
 
 
     public Gemstone() {
+        this.name = "";
+        this.preciousness = "";
+        this.origin = "";
+        this.color = "";
+        this.transparency = 0;
+        this.cuttingMethod = 4;
+        this.value = 0;
     }
 
     public Gemstone(String name, String preciousness, String origin, String color, Double transparency, Integer cuttingMethod, Double value) {
