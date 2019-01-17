@@ -7,9 +7,9 @@ import com.epam.webParsing.service.parser.parser_xml.parser_contribution.Contrib
 import com.epam.webParsing.service.parser.parser_xml.parser_contribution.ContributionStaxParser;
 import com.epam.webParsing.service.parser.parser_xml.type.ParserType;
 import com.epam.webParsing.service.reader.FileReader;
-import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
-import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
 import com.epam.webParsing.service.validator.validator_interface.Validator;
+import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
+import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
 
 public class ContributionServiceFactory implements ServiceFactory {
     @Override

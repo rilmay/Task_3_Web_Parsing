@@ -8,7 +8,7 @@ public class Gemstone implements XmlEntity {
     private String name;
     private String preciousness;
     private String origin;
-    private String colour;
+    private String color;
     private double transparency;
     private int cuttingMethod;
     private double value;
@@ -17,6 +17,17 @@ public class Gemstone implements XmlEntity {
     public Gemstone() {
     }
 
+    public Gemstone(String name, String preciousness, String origin, String color, Double transparency, Integer cuttingMethod, Double value) {
+        this.name = name;
+        this.preciousness = preciousness;
+        this.origin = origin;
+        this.color = color;
+        this.transparency = transparency;
+        this.cuttingMethod = cuttingMethod;
+        this.value = value;
+    }
+
+    //region getterAndSetter
     public String getName() {
         return name;
     }
@@ -41,12 +52,12 @@ public class Gemstone implements XmlEntity {
         this.origin = origin;
     }
 
-    public String getColour() {
-        return colour;
+    public String getColor() {
+        return color;
     }
 
-    public void setColour(String colour) {
-        this.colour = colour;
+    public void setColor(String colour) {
+        this.color = colour;
     }
 
     public double getTransparency() {
@@ -72,6 +83,7 @@ public class Gemstone implements XmlEntity {
     public void setValue(double value) {
         this.value = value;
     }
+    //endregion
 
     @Override
     public boolean equals(Object o) {
@@ -83,18 +95,18 @@ public class Gemstone implements XmlEntity {
                 Objects.equals(name, gemstone.name) &&
                 Objects.equals(preciousness, gemstone.preciousness) &&
                 Objects.equals(origin, gemstone.origin) &&
-                Objects.equals(colour, gemstone.colour);
+                Objects.equals(color, gemstone.color);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(name, preciousness, origin, colour, transparency, value);
+        return Objects.hash(name, preciousness, origin, color, transparency, value);
     }
 
     @Override
     public String toString() {
-        return "Gemstone@ name: " + name + " preciousness: " + preciousness + " origin: " + origin + " colour:" +
-                colour + " transparency: " + transparency + " cuttingMethod: " + cuttingMethod + " value" + value;
+        return "Gemstone name: " + name + " preciousness: " + preciousness + " origin: " + origin + " color: " +
+                color + " transparency: " + transparency + " cuttingMethod: " + cuttingMethod + " value: " + value;
     }
 }
