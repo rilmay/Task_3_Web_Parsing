@@ -2,7 +2,10 @@ package com.epam.webParsing.service.parser.xml.contribution;
 
 
 import com.epam.webParsing.entity.Contribution;
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.parser.XmlParser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -12,15 +15,16 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContributionSaxParser implements XmlParser<Contribution> {
+    private static Logger logger = LogManager.getLogger(ContributionSaxParser.class);
 
     private class ContributionHandler extends DefaultHandler {
         private Contribution currentContribution;
         private String thisElement;
-        private List<Contribution> contributions = new LinkedList<>();
+        private List<Contribution> contributions = new ArrayList<>();
 
         private List<Contribution> getParsed() {
             return contributions;
@@ -78,7 +82,8 @@ public class ContributionSaxParser implements XmlParser<Contribution> {
             parser.parse(parsedFile, contributionHandler);
             return contributionHandler.getParsed();
         } catch (ParserConfigurationException | SAXException | IOException e) {
-            throw new IllegalArgumentException(e);
+            logger.error("Exception occurs while parsing:" + e.getMessage());
+            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
         }
     }
 }

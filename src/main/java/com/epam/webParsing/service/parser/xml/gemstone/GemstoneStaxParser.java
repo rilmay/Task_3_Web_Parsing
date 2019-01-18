@@ -1,6 +1,7 @@
 package com.epam.webParsing.service.parser.xml.gemstone;
 
 import com.epam.webParsing.entity.Gemstone;
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.parser.XmlParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -48,7 +49,8 @@ public class GemstoneStaxParser implements XmlParser<Gemstone> {
             }
 
         } catch (FileNotFoundException | XMLStreamException e) {
-            logger.error(e.getMessage());
+            logger.error("Exception occurs while parsing:" + e.getMessage());
+            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
 
         }
         return gemstoneList;

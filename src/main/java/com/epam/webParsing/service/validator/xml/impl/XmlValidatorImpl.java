@@ -1,5 +1,6 @@
 package com.epam.webParsing.service.validator.xml.impl;
 
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.reader.FileReader;
 import com.epam.webParsing.service.validator.xml.XmlValidator;
 import org.apache.logging.log4j.LogManager;
@@ -20,7 +21,10 @@ public class XmlValidatorImpl implements XmlValidator {
 
     @Override
     public void setXsd(String xsdPath) {
-        FileReader fileReader = FileReader.getInstance();
+        if (xsdPath == null || xsdPath.isEmpty()){
+            throw new IncorrectInputException("Incorrect xsd");
+        }
+            FileReader fileReader = FileReader.getInstance();
         xsd = fileReader.read(xsdPath);
     }
 
@@ -28,10 +32,12 @@ public class XmlValidatorImpl implements XmlValidator {
     public boolean isValid(File parsedFile) {
         try {
             if (!parsedFile.exists()) {
-                logger.info("File don`t exist " + parsedFile.getPath());
+                logger.info("Incorrect parsed file");
+                throw new IncorrectInputException("Incorrect parsed file");
             }
             if (!xsd.exists()) {
-                logger.info("Xsd is not configured " + xsd.getPath());
+                logger.info("Xsd is not configured ");
+                throw new IncorrectInputException("Xsd is not configured");
             }
             SchemaFactory factory = SchemaFactory
                     .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
@@ -40,7 +46,7 @@ public class XmlValidatorImpl implements XmlValidator {
             validator.validate(new StreamSource(parsedFile));
             return true;
         } catch (SAXException | IOException e) {
-            logger.error(e.getMessage());
+            logger.error("Invalid file, cause: "+e.getMessage());
             return false;
         }
     }

@@ -2,6 +2,7 @@ package com.epam.webParsing.service.parser.xml.gemstone;
 
 
 import com.epam.webParsing.entity.Gemstone;
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.parser.XmlParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,12 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GemstoneDomParser implements XmlParser<Gemstone> {
-
-    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class.getName());
+    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class);
 
     @Override
     public List<Gemstone> parse(File parsedFile) {
-        List<Gemstone> gemstoneList = new ArrayList<>();
+        List<Gemstone> gemstoneList;
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -32,7 +32,8 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
             gemstoneList = parseParameters(document.getDocumentElement().getElementsByTagName("Gem"));
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
-            logger.error(e.getMessage());
+            logger.error("Exception occurs while parsing:" +e.getMessage());
+            throw new IncorrectInputException("Exception occurs while parsing: "+e.getMessage());
         }
         return gemstoneList;
     }
@@ -44,7 +45,6 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
             Gemstone gemstone = new Gemstone();
             if (gem.getNodeType() != Node.TEXT_NODE) {
                 for (int j = 0; j < gem.getChildNodes().getLength(); j++) {
-
                     switch (gem.getChildNodes().item(j).getNodeName()) {
                         case "Name":
                             gemstone.setName(gem.getChildNodes().item(j).getTextContent());
@@ -72,7 +72,6 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
     }
 
     private void parseVisualParameters(NodeList visualParameters, Gemstone gemstone) {
-
         for (int d = 0; d < visualParameters.getLength(); d++) {
             Node visualParameter = visualParameters.item(d);
             if (visualParameter.getNodeType() != Node.TEXT_NODE) {

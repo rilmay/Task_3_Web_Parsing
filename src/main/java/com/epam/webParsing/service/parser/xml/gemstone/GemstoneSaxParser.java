@@ -1,15 +1,19 @@
 package com.epam.webParsing.service.parser.xml.gemstone;
 
 import com.epam.webParsing.entity.Gemstone;
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.parser.XmlParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -89,8 +93,9 @@ public class GemstoneSaxParser implements XmlParser<Gemstone> {
 
             saxParser.parse(parsedFile.getPath(), handler);
 
-        } catch (Exception e) {
-            logger.error(e.getMessage());
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            logger.error("Exception occurs while parsing:" + e.getMessage());
+            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
         }
         return gemstoneList;
     }

@@ -1,7 +1,10 @@
 package com.epam.webParsing.service.parser.xml.contribution;
 
 import com.epam.webParsing.entity.Contribution;
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.parser.XmlParser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -12,13 +15,15 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContributionDomParser implements XmlParser<Contribution> {
+    private static Logger logger = LogManager.getLogger(ContributionDomParser.class);
+
     @Override
     public List<Contribution> parse(File parsedFile) {
-        List<Contribution> contributions = new LinkedList<>();
+        List<Contribution> contributions = new ArrayList<>();
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -42,7 +47,8 @@ public class ContributionDomParser implements XmlParser<Contribution> {
                 contributions.add(parsed);
             }
         } catch (ParserConfigurationException | SAXException | IOException | IllegalArgumentException e) {
-            throw new IllegalArgumentException(e);
+            logger.error("Exception occurs while parsing: " + e.getMessage());
+            throw new IncorrectInputException(e);
         }
         return contributions;
     }
@@ -56,6 +62,7 @@ public class ContributionDomParser implements XmlParser<Contribution> {
                 }
             }
         }
-        throw new IllegalArgumentException("Current position can not be reached");
+        logger.error("Invalid file");
+        throw new IllegalArgumentException("Invalid file");
     }
 }

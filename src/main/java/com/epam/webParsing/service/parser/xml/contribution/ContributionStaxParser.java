@@ -1,7 +1,10 @@
 package com.epam.webParsing.service.parser.xml.contribution;
 
 import com.epam.webParsing.entity.Contribution;
+import com.epam.webParsing.exception.IncorrectInputException;
 import com.epam.webParsing.service.parser.XmlParser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -9,13 +12,16 @@ import javax.xml.stream.XMLStreamReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContributionStaxParser implements XmlParser<Contribution> {
+    private static Logger logger = LogManager.getLogger(ContributionStaxParser.class);
+
+
     @Override
     public List<Contribution> parse(File parsedFile) {
-        List<Contribution> contributions = new LinkedList<>();
+        List<Contribution> contributions = new ArrayList<>();
         Contribution currentContribution = new Contribution();
         try {
             XMLStreamReader xmlReader = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(parsedFile));
@@ -33,7 +39,8 @@ public class ContributionStaxParser implements XmlParser<Contribution> {
                 }
             }
         } catch (FileNotFoundException | XMLStreamException e) {
-            throw new IllegalArgumentException(e);
+            logger.error("Exception occurs while parsing:" + e.getMessage());
+            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
         }
         return contributions;
     }
@@ -65,7 +72,8 @@ public class ContributionStaxParser implements XmlParser<Contribution> {
                 input.setTimeConstraints(Double.parseDouble(text));
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect input");
+                logger.error("Invalid file");
+                throw new IncorrectInputException("Invalid file");
         }
     }
 }

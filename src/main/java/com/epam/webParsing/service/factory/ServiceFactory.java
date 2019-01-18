@@ -1,14 +1,15 @@
 package com.epam.webParsing.service.factory;
 
 import com.epam.webParsing.service.parser.XmlParser;
-import com.epam.webParsing.service.parser.xml.type.ParserType;
 import com.epam.webParsing.service.reader.FileReader;
 import com.epam.webParsing.service.validator.Validator;
+
+import java.io.File;
 
 public interface ServiceFactory {
     FileReader getFileReader();
 
-    Validator getXmlValidator();
+    Validator<File> getXmlValidator();
 
-    XmlParser getParserByType(ParserType parserType);
+    XmlParser getParserByType(String parserType);
 }
