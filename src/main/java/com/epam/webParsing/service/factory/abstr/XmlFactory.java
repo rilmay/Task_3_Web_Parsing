@@ -1,9 +1,9 @@
-package com.epam.webParsing.service.factory.abstract_factory;
+package com.epam.webParsing.service.factory.abstr;
 
 import com.epam.webParsing.entity.type.EntityType;
-import com.epam.webParsing.service.factory.factory_impl.ContributionServiceFactory;
-import com.epam.webParsing.service.factory.factory_impl.GemstoneServiceFactory;
-import com.epam.webParsing.service.factory.factory_interface.ServiceFactory;
+import com.epam.webParsing.service.factory.impl.ContributionServiceFactory;
+import com.epam.webParsing.service.factory.impl.GemstoneServiceFactory;
+import com.epam.webParsing.service.factory.ServiceFactory;
 
 public class XmlFactory {
     private static XmlFactory instance = new XmlFactory();

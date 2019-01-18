@@ -1,7 +1,7 @@
-package com.epam.webParsing.service.parser.parser_xml.parser_contribution;
+package com.epam.webParsing.service.parser.xml.contribution;
 
 import com.epam.webParsing.entity.Contribution;
-import com.epam.webParsing.service.parser.parser_interface.XmlParser;
+import com.epam.webParsing.service.parser.XmlParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

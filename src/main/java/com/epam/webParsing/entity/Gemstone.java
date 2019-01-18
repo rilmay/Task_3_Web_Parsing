@@ -1,7 +1,5 @@
 package com.epam.webParsing.entity;
 
-import com.epam.webParsing.entity.entity_interface.XmlEntity;
-
 import java.util.Objects;
 
 public class Gemstone implements XmlEntity {

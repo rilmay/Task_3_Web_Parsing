@@ -1,7 +1,8 @@
-package com.epam.webParsing.service.parser.parser_xml.parser_gemstone;
+package com.epam.webParsing.service.parser.xml.gemstone;
+
 
 import com.epam.webParsing.entity.Gemstone;
-import com.epam.webParsing.service.parser.parser_interface.XmlParser;
+import com.epam.webParsing.service.parser.XmlParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;

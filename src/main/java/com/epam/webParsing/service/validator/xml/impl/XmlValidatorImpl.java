@@ -1,8 +1,7 @@
-package com.epam.webParsing.service.validator.xml.validator_impl;
+package com.epam.webParsing.service.validator.xml.impl;
 
-import com.epam.webParsing.service.parser.parser_xml.parser_gemstone.GemstoneDomParser;
 import com.epam.webParsing.service.reader.FileReader;
-import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidator;
+import com.epam.webParsing.service.validator.xml.XmlValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
@@ -16,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class XmlValidatorImpl implements XmlValidator {
-    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class.getName());
+    private static Logger logger = LogManager.getLogger(XmlValidatorImpl.class);
     private File xsd;
 
     @Override

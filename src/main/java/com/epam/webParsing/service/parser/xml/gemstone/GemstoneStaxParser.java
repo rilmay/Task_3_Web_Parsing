@@ -1,7 +1,7 @@
-package com.epam.webParsing.service.parser.parser_xml.parser_gemstone;
+package com.epam.webParsing.service.parser.xml.gemstone;
 
 import com.epam.webParsing.entity.Gemstone;
-import com.epam.webParsing.service.parser.parser_interface.XmlParser;
+import com.epam.webParsing.service.parser.XmlParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,7 +19,7 @@ import java.util.List;
 
 public class GemstoneStaxParser implements XmlParser<Gemstone> {
 
-    private static Logger logger = LogManager.getLogger(GemstoneDomParser.class.getName());
+    private static Logger logger = LogManager.getLogger(GemstoneStaxParser.class);
     private StartElement startElement;
     private Gemstone gemstone;
     private XMLEvent xmlEvent;
