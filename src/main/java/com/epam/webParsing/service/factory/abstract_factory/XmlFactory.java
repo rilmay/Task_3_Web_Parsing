@@ -21,7 +21,7 @@ public class XmlFactory {
             case CONTRIBUTION:
                 return contributionServiceFactory;
             default:
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("Wrong factory type");
         }
     }
 }

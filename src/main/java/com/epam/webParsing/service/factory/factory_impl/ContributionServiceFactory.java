@@ -12,6 +12,8 @@ import com.epam.webParsing.service.validator.xml.validator_Interface.XmlValidato
 import com.epam.webParsing.service.validator.xml.validator_impl.XmlValidatorImpl;
 
 public class ContributionServiceFactory implements ServiceFactory {
+    private final String CONTRIBUTION_XSD_PATH = "src/main/resources/Contribution.xsd";
+
     @Override
     public FileReader getFileReader() {
         return FileReader.getInstance();
@@ -20,7 +22,7 @@ public class ContributionServiceFactory implements ServiceFactory {
     @Override
     public Validator getXmlValidator() {
         XmlValidator validator = new XmlValidatorImpl();
-        validator.setXsd(null);
+        validator.setXsd(CONTRIBUTION_XSD_PATH);
         return validator;
     }
 

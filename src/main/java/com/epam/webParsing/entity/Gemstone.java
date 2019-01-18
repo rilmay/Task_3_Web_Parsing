@@ -34,7 +34,6 @@ public class Gemstone implements XmlEntity {
         this.value = value;
     }
 
-    //region getterAndSetter
     public String getName() {
         return name;
     }
@@ -90,7 +89,6 @@ public class Gemstone implements XmlEntity {
     public void setValue(double value) {
         this.value = value;
     }
-    //endregion
 
     @Override
     public boolean equals(Object o) {

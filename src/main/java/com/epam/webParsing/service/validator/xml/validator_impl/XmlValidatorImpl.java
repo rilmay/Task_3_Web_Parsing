@@ -34,7 +34,6 @@ public class XmlValidatorImpl implements XmlValidator {
             if (!xsd.exists()) {
                 logger.info("Xsd is not configured " + xsd.getPath());
             }
-
             SchemaFactory factory = SchemaFactory
                     .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(new StreamSource(xsd));

@@ -61,7 +61,6 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
                             parseVisualParameters(gem.getChildNodes().item(j).getChildNodes(), gemstone);
                             break;
                     }
-
                 }
                 gemstoneList.add(gemstone);
             }
@@ -89,6 +88,5 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
                 }
             }
         }
-
     }
 }
