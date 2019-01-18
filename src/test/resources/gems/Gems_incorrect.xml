@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Gems>
+    <Gem>
+        <Name>Margeaux</Name>
+        <Preciousness>semiprecious</Preciousness>
+        <Origin>Luxembourg</Origin>
+        <VisualParameters>
+            <Color>Pink</Color>
+            <Transparency>89</Transparency>
+            <CuttingMethod>10</CuttingMethod>
+        </VisualParameters>
+        <Value>1f8</Value>
+    </Gem>
+    <Gem>
+        <Name>Rodney</Name>
+        <Preciousness>precious</Preciousness>
+        <Origin>Brazil</Origin>
+        <VisualParameters>
+            <Color>Khaki</Color>
+            <Transparency>51</Transparency>
+            <CuttingMethod>14</CuttingMethod>
+        </VisualParameters>
+        <Value>91</Value>
+    </Gem>
+</Gems>

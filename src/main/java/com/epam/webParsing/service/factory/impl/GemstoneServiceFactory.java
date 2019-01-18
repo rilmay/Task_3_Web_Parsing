@@ -14,8 +14,6 @@ import com.epam.webParsing.service.validator.xml.impl.XmlValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.File;
-
 public class GemstoneServiceFactory implements ServiceFactory {
     private static Logger logger = LogManager.getLogger(GemstoneServiceFactory.class);
 
@@ -27,7 +25,7 @@ public class GemstoneServiceFactory implements ServiceFactory {
     }
 
     @Override
-    public Validator<File> getXmlValidator() {
+    public Validator getXmlValidator() {
         XmlValidator validator = new XmlValidatorImpl();
         validator.setXsd(XSD_GEMSTONE_PATH);
         return validator;

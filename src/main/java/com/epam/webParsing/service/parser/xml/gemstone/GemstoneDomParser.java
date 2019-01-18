@@ -32,8 +32,8 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
             gemstoneList = parseParameters(document.getDocumentElement().getElementsByTagName("Gem"));
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
-            logger.error("Exception occurs while parsing:" +e.getMessage());
-            throw new IncorrectInputException("Exception occurs while parsing: "+e.getMessage());
+            logger.error("Exception occurs while parsing:" + e.getMessage());
+            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
         }
         return gemstoneList;
     }

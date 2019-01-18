@@ -1,15 +1,15 @@
 package com.epam.webParsing.exception;
 
 public class IncorrectInputException extends RuntimeException {
-    public IncorrectInputException(){
+    public IncorrectInputException() {
         super();
     }
 
-    public IncorrectInputException(String s){
+    public IncorrectInputException(String s) {
         super(s);
     }
 
-    public IncorrectInputException(Throwable t){
+    public IncorrectInputException(Throwable t) {
         super(t);
     }
 }

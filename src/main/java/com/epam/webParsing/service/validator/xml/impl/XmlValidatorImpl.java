@@ -21,21 +21,21 @@ public class XmlValidatorImpl implements XmlValidator {
 
     @Override
     public void setXsd(String xsdPath) {
-        if (xsdPath == null || xsdPath.isEmpty()){
+        if (xsdPath == null || xsdPath.isEmpty()) {
             throw new IncorrectInputException("Incorrect xsd");
         }
-            FileReader fileReader = FileReader.getInstance();
+        FileReader fileReader = FileReader.getInstance();
         xsd = fileReader.read(xsdPath);
     }
 
     @Override
-    public boolean isValid(File parsedFile) {
+    public boolean isValid(File input) {
         try {
-            if (!parsedFile.exists()) {
+            if (input == null || !input.exists()) {
                 logger.info("Incorrect parsed file");
                 throw new IncorrectInputException("Incorrect parsed file");
             }
-            if (!xsd.exists()) {
+            if (xsd == null || !xsd.exists()) {
                 logger.info("Xsd is not configured ");
                 throw new IncorrectInputException("Xsd is not configured");
             }
@@ -43,10 +43,10 @@ public class XmlValidatorImpl implements XmlValidator {
                     .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(new StreamSource(xsd));
             Validator validator = schema.newValidator();
-            validator.validate(new StreamSource(parsedFile));
+            validator.validate(new StreamSource(input));
             return true;
         } catch (SAXException | IOException e) {
-            logger.error("Invalid file, cause: "+e.getMessage());
+            logger.error("Invalid file, cause: " + e.getMessage());
             return false;
         }
     }

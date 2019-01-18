@@ -109,7 +109,7 @@ public class Gemstone implements XmlEntity {
 
     @Override
     public String toString() {
-        return "Gemstone name: " + name + " preciousness: " + preciousness + " origin: " + origin + " color: " +
+        return "Gemstone@ name: " + name + " preciousness: " + preciousness + " origin: " + origin + " color: " +
                 color + " transparency: " + transparency + " cuttingMethod: " + cuttingMethod + " value: " + value;
     }
 }
