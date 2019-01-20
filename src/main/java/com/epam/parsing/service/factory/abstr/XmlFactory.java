@@ -22,7 +22,7 @@ public class XmlFactory {
     }
 
     public <T extends XmlEntity> ServiceFactory getFactoryByType(Class<T> entityClass) {
-        Class inputClass  = Optional.of(entityClass).orElseThrow(() ->new IncorrectInputException("Incorrect class"));
+        Class inputClass = Optional.of(entityClass).orElseThrow(() -> new IncorrectInputException("Incorrect class"));
         String type = inputClass.getName()
                 .replaceAll("\\w+\\.", "").toUpperCase();
         EntityType entityType = EntityType.valueOf(type);

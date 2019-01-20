@@ -50,7 +50,7 @@ public class GemstoneStaxParser implements XmlParser<Gemstone> {
 
         } catch (FileNotFoundException | XMLStreamException e) {
             logger.error("Exception occurs while parsing:" + e.getMessage());
-            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
+            throw new IncorrectInputException(e);
 
         }
         return gemstoneList;

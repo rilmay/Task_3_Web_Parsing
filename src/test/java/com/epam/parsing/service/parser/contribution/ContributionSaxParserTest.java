@@ -25,15 +25,15 @@ public class ContributionSaxParserTest {
 
     @Test
     public void testParse3() {
-        Assert.assertEquals("Contribution@ name: Nolan-Olson country: Indonesia type: urgent " +
-                "depositor: Antonie Oliveti accountId: 44 amountOfDeposit: 58.09 profitability: 3.4 " +
-                "timeConstraints: 36.0", saxParser.parse(parsedFile3).get(0).toString());
+        Assert.assertEquals("Contribution@ name: Durgan, Block and Gusikowski country: China type: calculated " +
+                "depositor: Karin McKennan accountId: 54 amountOfDeposit: 99.88 profitability: 23.96 " +
+                "timeConstraints: 7 days", saxParser.parse(parsedFile3).get(0).toString());
     }
 
     @Test
     public void testParse4() {
-        Assert.assertEquals("Contribution@ name: Kris, Von and Becker country: Nigeria type: accumulative " +
-                "depositor: Gerry Stucksbury accountId: 32 amountOfDeposit: 82.85 profitability: 38.4 " +
-                "timeConstraints: 5.0", saxParser.parse(parsedFile4).get(0).toString());
+        Assert.assertEquals("Contribution@ name: Reynolds, Stamm and Schmidt country: France type: urgent " +
+                "depositor: Consuela Letham accountId: 80 amountOfDeposit: 90.9 profitability: 46.17 " +
+                "timeConstraints: 2 years 4 months 6 days", saxParser.parse(parsedFile4).get(0).toString());
     }
 }

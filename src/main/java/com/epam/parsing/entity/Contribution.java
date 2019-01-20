@@ -10,9 +10,9 @@ public class Contribution implements XmlEntity {
     private int accountId;
     private double amountOfDeposit;
     private double profitability;
-    private double timeConstraints;
+    private String timeConstraints;
 
-    public Contribution(String name, String country, String type, String depositor, int accountId, double amountOfDeposit, double profitability, double timeConstraints) {
+    public Contribution(String name, String country, String type, String depositor, int accountId, double amountOfDeposit, double profitability, String timeConstraints) {
         this.name = name;
         this.country = country;
         this.type = type;
@@ -82,11 +82,11 @@ public class Contribution implements XmlEntity {
         this.profitability = profitability;
     }
 
-    public double getTimeConstraints() {
+    public String getTimeConstraints() {
         return timeConstraints;
     }
 
-    public void setTimeConstraints(double timeConstraints) {
+    public void setTimeConstraints(String timeConstraints) {
         this.timeConstraints = timeConstraints;
     }
 
@@ -98,7 +98,7 @@ public class Contribution implements XmlEntity {
         return accountId == that.accountId &&
                 Double.compare(that.amountOfDeposit, amountOfDeposit) == 0 &&
                 Double.compare(that.profitability, profitability) == 0 &&
-                Double.compare(that.timeConstraints, timeConstraints) == 0 &&
+                Objects.equals(timeConstraints, that.timeConstraints) &&
                 Objects.equals(name, that.name) &&
                 Objects.equals(country, that.country) &&
                 Objects.equals(type, that.type) &&

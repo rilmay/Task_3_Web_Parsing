@@ -29,10 +29,28 @@
                 </xsd:simpleType>
             </xsd:element>
             <xsd:element name="depositor" type="xsd:string"/>
-            <xsd:element name="account_id" type="xsd:integer"/>
-            <xsd:element name="amount_on_deposit" type="xsd:float"/>
-            <xsd:element name="profitability" type="xsd:float"/>
-            <xsd:element name="time_constraints" type="xsd:float"/>
+            <xsd:element name="account_id">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:minInclusive value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="amount_on_deposit">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:float">
+                        <xsd:minExclusive value="0"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="profitability">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:float">
+                        <xsd:minExclusive value="0"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="time_constraints" type="xsd:duration"/>
         </xsd:sequence>
     </xsd:complexType>
 

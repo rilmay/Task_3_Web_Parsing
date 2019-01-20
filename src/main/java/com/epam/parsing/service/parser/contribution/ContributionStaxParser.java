@@ -3,6 +3,7 @@ package com.epam.parsing.service.parser.contribution;
 import com.epam.parsing.entity.Contribution;
 import com.epam.parsing.exception.IncorrectInputException;
 import com.epam.parsing.service.parser.XmlParser;
+import com.epam.parsing.service.parser.contribution.utility.ParserUtility;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -40,7 +41,7 @@ public class ContributionStaxParser implements XmlParser<Contribution> {
             }
         } catch (FileNotFoundException | XMLStreamException e) {
             logger.error("Exception occurs while parsing:" + e.getMessage());
-            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
+            throw new IncorrectInputException(e);
         }
         return contributions;
     }
@@ -69,7 +70,7 @@ public class ContributionStaxParser implements XmlParser<Contribution> {
                 input.setProfitability(Double.parseDouble(text));
                 break;
             case "time_constraints":
-                input.setTimeConstraints(Double.parseDouble(text));
+                input.setTimeConstraints(ParserUtility.getFormattedDate(text));
                 break;
             default:
                 logger.error("Invalid file");

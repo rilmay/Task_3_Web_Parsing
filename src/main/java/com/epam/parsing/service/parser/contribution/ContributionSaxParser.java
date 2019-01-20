@@ -4,6 +4,7 @@ package com.epam.parsing.service.parser.contribution;
 import com.epam.parsing.entity.Contribution;
 import com.epam.parsing.exception.IncorrectInputException;
 import com.epam.parsing.service.parser.XmlParser;
+import com.epam.parsing.service.parser.contribution.utility.ParserUtility;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.Attributes;
@@ -66,7 +67,7 @@ public class ContributionSaxParser implements XmlParser<Contribution> {
                     currentContribution.setProfitability(Double.parseDouble(new String(ch, start, length)));
                     break;
                 case "time_constraints":
-                    currentContribution.setTimeConstraints(Double.parseDouble(new String(ch, start, length)));
+                    currentContribution.setTimeConstraints(ParserUtility.getFormattedDate(new String(ch, start, length)));
                     contributions.add(currentContribution);
                     break;
             }
@@ -83,7 +84,7 @@ public class ContributionSaxParser implements XmlParser<Contribution> {
             return contributionHandler.getParsed();
         } catch (ParserConfigurationException | SAXException | IOException e) {
             logger.error("Exception occurs while parsing:" + e.getMessage());
-            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
+            throw new IncorrectInputException(e);
         }
     }
 }

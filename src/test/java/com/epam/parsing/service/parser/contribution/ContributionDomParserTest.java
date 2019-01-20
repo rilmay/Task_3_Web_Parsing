@@ -25,16 +25,16 @@ public class ContributionDomParserTest {
 
     @Test
     public void testParse1() {
-        Assert.assertEquals("Contribution@ name: Rolfson, Paucek and Haag country: Indonesia type: calculated " +
-                "depositor: Edwina Pearsall accountId: 14 amountOfDeposit: 56.11 profitability: 72.9 " +
-                "timeConstraints: 77.0", domParser.parse(parsedFile1).get(0).toString());
+        Assert.assertEquals("Contribution@ name: Bauch, Schaefer and Lehner country: United States " +
+                "type: saving depositor: Bernie Churcher accountId: 99 amountOfDeposit: 87.44 " +
+                "profitability: 49.97 timeConstraints: 2 days", domParser.parse(parsedFile1).get(0).toString());
     }
 
     @Test
     public void testParse2() {
-        Assert.assertEquals("Contribution@ name: Reilly-Cummerata country: Afghanistan type: demand " +
-                "depositor: Stanford Vedenyapin accountId: 34 amountOfDeposit: 45.54 profitability: 2.9 " +
-                "timeConstraints: 83.0", domParser.parse(parsedFile2).get(0).toString());
+        Assert.assertEquals("Contribution@ name: Streich and Sons country: Indonesia type: urgent " +
+                "depositor: Lewiss Bolland accountId: 21 amountOfDeposit: 16.08 profitability: 59.38 " +
+                "timeConstraints: 9 months 9 days", domParser.parse(parsedFile2).get(0).toString());
     }
 
 }

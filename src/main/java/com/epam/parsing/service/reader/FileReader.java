@@ -16,7 +16,7 @@ public class FileReader {
     }
 
     public File read(String path) {
-        File file = new File(Optional.of(path).orElseThrow(() ->new IncorrectInputException("Path is null pointer")));
+        File file = new File(Optional.of(path).orElseThrow(() -> new IncorrectInputException("Path is null pointer")));
         if (!file.exists() || !file.isFile()) {
             logger.error("File does not exist or not a file");
             throw new IncorrectInputException("File does not exist or not a file");

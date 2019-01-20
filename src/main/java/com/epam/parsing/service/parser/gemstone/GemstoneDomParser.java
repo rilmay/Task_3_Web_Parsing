@@ -33,7 +33,7 @@ public class GemstoneDomParser implements XmlParser<Gemstone> {
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
             logger.error("Exception occurs while parsing:" + e.getMessage());
-            throw new IncorrectInputException("Exception occurs while parsing: " + e.getMessage());
+            throw new IncorrectInputException(e);
         }
         return gemstoneList;
     }

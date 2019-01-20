@@ -25,15 +25,15 @@ public class ContributionStaxParserTest {
 
     @Test
     public void testParse3() {
-        Assert.assertEquals("Contribution@ name: Nikolaus-Johnson country: Philippines type: accumulative " +
-                "depositor: Salvatore Weatherill accountId: 1 amountOfDeposit: 80.67 profitability: 70.2 " +
-                "timeConstraints: 24.0", staxParser.parse(parsedFile5).get(0).toString());
+        Assert.assertEquals("Contribution@ name: Weimann-Schultz country: Portugal type: saving " +
+                "depositor: Heidi Stenners accountId: 54 amountOfDeposit: 75.27 profitability: 86.03 " +
+                "timeConstraints: 5 months 2 days 7 hours", staxParser.parse(parsedFile5).get(0).toString());
     }
 
     @Test
     public void testParse4() {
-        Assert.assertEquals("Contribution@ name: Kessler and Sons country: Malaysia type: accumulative " +
-                "depositor: Alisha Pennini accountId: 17 amountOfDeposit: 90.41 profitability: 90.7 " +
-                "timeConstraints: 51.0", staxParser.parse(parsedFile6).get(0).toString());
+        Assert.assertEquals("Contribution@ name: Buckridge-Morar country: China type: metal " +
+                "depositor: Ema Jowle accountId: 93 amountOfDeposit: 23.61 profitability: 95.4 " +
+                "timeConstraints: 3 days 6 hours", staxParser.parse(parsedFile6).get(0).toString());
     }
 }

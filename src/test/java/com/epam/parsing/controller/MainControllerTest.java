@@ -25,9 +25,9 @@ public class MainControllerTest {
     public void testReadFileAndReturnParsedContribution() {
         String expected = mainController.readFileAndReturnParsed(contributionFilePath, "dom", Contribution.class)
                 .get(0).toString();
-        Assert.assertEquals("Contribution@ name: Rolfson, Paucek and Haag country: Indonesia type: calculated " +
-                "depositor: Edwina Pearsall accountId: 14 amountOfDeposit: 56.11 " +
-                "profitability: 72.9 timeConstraints: 77.0", expected);
+        Assert.assertEquals("Contribution@ name: Bauch, Schaefer and Lehner country: United States " +
+                "type: saving depositor: Bernie Churcher accountId: 99 amountOfDeposit: 87.44 " +
+                "profitability: 49.97 timeConstraints: 2 days", expected);
     }
 
     @Test

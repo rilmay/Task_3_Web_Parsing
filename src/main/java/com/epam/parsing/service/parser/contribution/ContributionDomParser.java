@@ -3,6 +3,7 @@ package com.epam.parsing.service.parser.contribution;
 import com.epam.parsing.entity.Contribution;
 import com.epam.parsing.exception.IncorrectInputException;
 import com.epam.parsing.service.parser.XmlParser;
+import com.epam.parsing.service.parser.contribution.utility.ParserUtility;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -42,7 +43,7 @@ public class ContributionDomParser implements XmlParser<Contribution> {
                 parsed.setAccountId(Integer.parseInt(getText(elements, 5)));
                 parsed.setAmountOfDeposit(Double.parseDouble(getText(elements, 6)));
                 parsed.setProfitability(Double.parseDouble(getText(elements, 7)));
-                parsed.setTimeConstraints(Double.parseDouble(getText(elements, 8)));
+                parsed.setTimeConstraints(ParserUtility.getFormattedDate(getText(elements, 8)));
 
                 contributions.add(parsed);
             }
