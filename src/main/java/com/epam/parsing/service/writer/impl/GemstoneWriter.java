@@ -37,18 +37,18 @@ public class GemstoneWriter implements XMLWriter<Gemstone> {
                 writer.writeEndElement();
 
                 writer.writeStartElement("Preciousness");
-                writer.writeCharacters(current.getName());
+                writer.writeCharacters(current.getPreciousness());
                 writer.writeEndElement();
 
                 writer.writeStartElement("Origin");
-                writer.writeCharacters(current.getName());
+                writer.writeCharacters(current.getOrigin());
                 writer.writeEndElement();
 
                 writer.writeStartElement("VisualParameters");
 
                 if (!current.getColor().isEmpty()) {
                     writer.writeStartElement("Color");
-                    writer.writeCharacters(current.getName());
+                    writer.writeCharacters(current.getColor());
                     writer.writeEndElement();
                 }
 

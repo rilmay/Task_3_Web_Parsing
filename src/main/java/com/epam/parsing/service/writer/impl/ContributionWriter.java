@@ -1,7 +1,6 @@
 package com.epam.parsing.service.writer.impl;
 
 import com.epam.parsing.entity.Contribution;
-import com.epam.parsing.exception.IncorrectInputException;
 import com.epam.parsing.service.parser.contribution.utility.ParserUtility;
 import com.epam.parsing.service.writer.XMLWriter;
 import org.apache.logging.log4j.LogManager;
@@ -26,7 +25,7 @@ public class ContributionWriter implements XMLWriter<Contribution> {
         XMLOutputFactory output = XMLOutputFactory.newInstance();
         try {
             XMLStreamWriter writer = output.createXMLStreamWriter(new FileWriter(path));
-            writer.writeStartDocument("UTF-8","1.0");
+            writer.writeStartDocument("UTF-8", "1.0");
             writer.writeStartElement("banks");
             for (Contribution current : contributions) {
                 if (current == null) {
@@ -66,7 +65,7 @@ public class ContributionWriter implements XMLWriter<Contribution> {
             writer.flush();
             return true;
         } catch (IOException | XMLStreamException e) {
-            logger.error("Exception occurs while writing "+e.getMessage());
+            logger.error("Exception occurs while writing " + e.getMessage());
             return false;
         }
 
