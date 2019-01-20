@@ -33,7 +33,7 @@ public class MainController {
             logger.error("Invalid file");
             throw new IncorrectInputException("Invalid file");
         }
-        XmlParser<T> domParser = serviceFactory.getParserByType(parserType);
-        return domParser.parse(parsedFile);
+        XmlParser<T> parser = serviceFactory.getParserByType(parserType);
+        return parser.parse(parsedFile);
     }
 }

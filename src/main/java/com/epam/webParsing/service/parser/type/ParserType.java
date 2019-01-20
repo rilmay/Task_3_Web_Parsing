@@ -1,4 +1,4 @@
-package com.epam.webParsing.service.parser.xml.type;
+package com.epam.webParsing.service.parser.type;
 
 public enum ParserType {
     DOM,

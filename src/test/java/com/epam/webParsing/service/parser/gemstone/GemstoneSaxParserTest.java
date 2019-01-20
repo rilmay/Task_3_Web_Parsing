@@ -1,4 +1,4 @@
-package com.epam.webParsing.service.parser.xml.gemstone;
+package com.epam.webParsing.service.parser.gemstone;
 
 import com.epam.webParsing.entity.Gemstone;
 import com.epam.webParsing.service.parser.XmlParser;

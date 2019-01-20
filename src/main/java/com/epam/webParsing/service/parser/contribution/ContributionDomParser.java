@@ -1,4 +1,4 @@
-package com.epam.webParsing.service.parser.xml.contribution;
+package com.epam.webParsing.service.parser.contribution;
 
 import com.epam.webParsing.entity.Contribution;
 import com.epam.webParsing.exception.IncorrectInputException;

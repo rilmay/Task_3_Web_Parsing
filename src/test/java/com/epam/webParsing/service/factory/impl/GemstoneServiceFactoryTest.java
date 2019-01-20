@@ -1,6 +1,6 @@
 package com.epam.webParsing.service.factory.impl;
 
-import com.epam.webParsing.service.validator.xml.impl.XmlValidatorImpl;
+import com.epam.webParsing.service.validator.impl.XmlValidatorImpl;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

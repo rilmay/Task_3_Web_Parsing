@@ -9,6 +9,8 @@ import com.epam.webParsing.service.factory.impl.GemstoneServiceFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Optional;
+
 public class XmlFactory {
     private static Logger logger = LogManager.getLogger(XmlFactory.class);
     private static XmlFactory instance = new XmlFactory();
@@ -20,7 +22,8 @@ public class XmlFactory {
     }
 
     public <T extends XmlEntity> ServiceFactory getFactoryByType(Class<T> entityClass) {
-        String type = entityClass.getName()
+        Class inputClass  = Optional.of(entityClass).orElseThrow(() ->new IncorrectInputException("Incorrect class"));
+        String type = inputClass.getName()
                 .replaceAll("\\w+\\.", "").toUpperCase();
         EntityType entityType = EntityType.valueOf(type);
 
