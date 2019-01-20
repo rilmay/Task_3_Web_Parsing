@@ -1,5 +1,6 @@
 package com.epam.parsing.service.factory.impl;
 
+import com.epam.parsing.entity.XmlEntity;
 import com.epam.parsing.exception.IncorrectInputException;
 import com.epam.parsing.service.factory.ServiceFactory;
 import com.epam.parsing.service.parser.XmlParser;
@@ -10,6 +11,8 @@ import com.epam.parsing.service.parser.type.ParserType;
 import com.epam.parsing.service.reader.FileReader;
 import com.epam.parsing.service.validator.Validator;
 import com.epam.parsing.service.validator.impl.XmlValidatorImpl;
+import com.epam.parsing.service.writer.XMLWriter;
+import com.epam.parsing.service.writer.impl.ContributionWriter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -43,5 +46,10 @@ public class ContributionServiceFactory implements ServiceFactory {
                 logger.error("Incorrect parser type");
                 throw new IncorrectInputException("Incorrect parser type");
         }
+    }
+
+    @Override
+    public XMLWriter<? extends XmlEntity> getWriter() {
+        return ContributionWriter.getInstance();
     }
 }

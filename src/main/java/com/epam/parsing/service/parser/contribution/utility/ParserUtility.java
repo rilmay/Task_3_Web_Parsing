@@ -6,4 +6,10 @@ public class ParserUtility {
                 .replaceAll("M"," months ").replaceAll("D"," days ")
                 .replaceAll("H"," hours ").trim();
     }
+
+    public static String reverseDateFormat(String input){
+        return "P"+input.replaceAll("years","Y").replaceAll("months","M")
+                .replaceAll("days","D").replaceAll("([1-9])+( hours)","T$1H")
+                .replaceAll(" ","");
+    }
 }
