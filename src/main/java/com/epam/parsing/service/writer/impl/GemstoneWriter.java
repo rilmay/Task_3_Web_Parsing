@@ -24,7 +24,7 @@ public class GemstoneWriter implements XMLWriter<Gemstone> {
         XMLOutputFactory output = XMLOutputFactory.newInstance();
         try {
             XMLStreamWriter writer = output.createXMLStreamWriter(new FileWriter(path));
-            writer.writeStartDocument("1.0");
+            writer.writeStartDocument("UTF-8", "1.0");
             writer.writeStartElement("Gems");
             for (Gemstone current : gemstones) {
                 if (current == null) {

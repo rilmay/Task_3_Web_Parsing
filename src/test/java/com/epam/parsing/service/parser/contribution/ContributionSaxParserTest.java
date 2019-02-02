@@ -14,6 +14,9 @@ public class ContributionSaxParserTest {
     private FileReader fileReader;
     private File parsedFile3;
     private File parsedFile4;
+    private File parsedFile1;
+    private File parsedFile2;
+    private File parsedFile5;
 
     @BeforeTest
     public void init() {
@@ -21,6 +24,24 @@ public class ContributionSaxParserTest {
         fileReader = FileReader.getInstance();
         parsedFile3 = fileReader.read("src/test/resources/banks/Banks3.xml");
         parsedFile4 = fileReader.read("src/test/resources/banks/Banks4.xml");
+        parsedFile1 = fileReader.read("src/test/resources/banks/Banks1.xml");
+        parsedFile2 = fileReader.read("src/test/resources/banks/Banks2.xml");
+        parsedFile5 = fileReader.read("src/test/resources/banks/Banks5.xml");
+    }
+
+
+    @Test
+    public void testParse1() {
+        Assert.assertEquals("Contribution@ name: Bauch, Schaefer and Lehner country: United States " +
+                "type: saving depositor: Bernie Churcher accountId: 99 amountOfDeposit: 87.44 " +
+                "profitability: 49.97 timeConstraints: 2 days", saxParser.parse(parsedFile1).get(0).toString());
+    }
+
+    @Test
+    public void testParse2() {
+        Assert.assertEquals("Contribution@ name: Streich and Sons country: Indonesia type: urgent " +
+                "depositor: Lewiss Bolland accountId: 21 amountOfDeposit: 16.08 profitability: 59.38 " +
+                "timeConstraints: 9 months 9 days", saxParser.parse(parsedFile2).get(0).toString());
     }
 
     @Test
@@ -35,5 +56,12 @@ public class ContributionSaxParserTest {
         Assert.assertEquals("Contribution@ name: Reynolds, Stamm and Schmidt country: France type: urgent " +
                 "depositor: Consuela Letham accountId: 80 amountOfDeposit: 90.9 profitability: 46.17 " +
                 "timeConstraints: 2 years 4 months 6 days", saxParser.parse(parsedFile4).get(0).toString());
+    }
+
+    @Test
+    public void testParse5() {
+        Assert.assertEquals("Contribution@ name: Weimann-Schultz country: Portugal type: saving " +
+                "depositor: Heidi Stenners accountId: 54 amountOfDeposit: 75.27 profitability: 86.03 " +
+                "timeConstraints: 5 months 2 days 7 hours", saxParser.parse(parsedFile5).get(0).toString());
     }
 }

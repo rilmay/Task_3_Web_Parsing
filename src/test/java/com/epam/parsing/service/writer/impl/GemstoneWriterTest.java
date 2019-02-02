@@ -38,12 +38,13 @@ public class GemstoneWriterTest {
                 .readFileAndReturnParsed(gemstoneFilePath, "dom", Gemstone.class);
         gemstoneWriter.write(gemstones, resultPath);
         List<String> file1 = Files.readAllLines(Paths.get(gemstoneFilePath), StandardCharsets.UTF_8);
-        String file1String = file1.stream().collect(Collectors.joining()).replaceAll("<.+?>", "").replaceAll("\\s", "");
+        String file1String = file1.stream().collect(Collectors.joining())
+                .replaceAll("<.+?>", "").replaceAll("\\s", "");
         List<String> file2 = Files.readAllLines(Paths.get(resultPath), StandardCharsets.UTF_8);
-        String file2String = file2.get(0).replaceAll("<.+?>", "").replaceAll("\\.0", "").replaceAll("\\s", "");
-
-        boolean b = new File(resultPath).delete();
+        String file2String = file2.get(0).replaceAll("<.+?>", "")
+                .replaceAll("\\.0", "").replaceAll("\\s", "");
+        File f = new File(resultPath);
+        f.delete();
         Assert.assertEquals(file1String, file2String);
-
     }
 }

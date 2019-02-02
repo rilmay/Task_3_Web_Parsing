@@ -38,11 +38,12 @@ public class ContributionWriterTest {
                 .readFileAndReturnParsed(contributionFilePath, "dom", Contribution.class);
         contributionWriter.write(contributions, resultPath);
         List<String> file1 = Files.readAllLines(Paths.get(contributionFilePath), StandardCharsets.UTF_8);
-        String file1String = file1.stream().collect(Collectors.joining()).replaceAll("<.+?>", "").replaceAll("\\s", "");
+        String file1String = file1.stream().collect(Collectors.joining()).replaceAll("\\s|\"|\'", "");
         List<String> file2 = Files.readAllLines(Paths.get(resultPath), StandardCharsets.UTF_8);
-        String file2String = file2.get(0).replaceAll("<.+?>", "").replaceAll("\\s", "");
-        boolean b = new File(resultPath).delete();
-        Assert.assertEquals(file1String,file2String);
+        String file2String = file2.get(0).replaceAll("\\s|\"|\'", "");
+        File f = new File(resultPath);
+        f.delete();
+        Assert.assertEquals(file1String, file2String);
 
     }
 }

@@ -21,7 +21,7 @@ public class MainController {
     }
 
     public <T extends XmlEntity> List<T> readFileAndReturnParsed(String path, String parserType, Class<T> entityClass) {
-        if (path == null || path.isEmpty() || parserType == null || parserType.isEmpty()) {
+        if (path == null || path.isEmpty() || parserType.isEmpty()) {
             logger.error("Incorrect string parameters");
             throw new IncorrectInputException("Incorrect string parameters");
         }
